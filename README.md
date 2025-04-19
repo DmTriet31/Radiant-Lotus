@@ -1,4 +1,3 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&width=435&lines=Radiant+Lotus+;DmTriet)](https://git.io/typing-svg)
 <!-- Background animated -->
 ![Animated Background](https://cdn.discordapp.com/attachments/1316896145393586227/1357330377693331566/standard.gif?ex=67efcfec&is=67ee7e6c&hm=fb05e526452ed3144bf0f1f48ef58240ca81f680b48bdf9528babbe2345ac4a2&)
 
@@ -8,7 +7,7 @@
 </p>
 
 <h1 align="center">
-  🚀 Radiant Lotus
+  🚀 [![Typing S](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&width=435&lines=Radiant+Lotus+;DmTriet)](https://git.io/typing-svg)
 </h1>
 
 <p align="center">
