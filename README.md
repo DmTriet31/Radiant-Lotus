@@ -78,8 +78,8 @@ UI/icons/musicicons.js	  Tùy chỉnh icon nhạc
 ```
 ❗ Troubleshooting
 Xem phần "Common Errors" để khắc phục lỗi thường gặp.
-
-# 📊GitHub Stats :  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&width=435&lines=Radiant+Lotus+;DmTriet)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&width=435&lines=Radiant+Lotus+;DmTriet)](https://git.io/typing-svg)
+# 📊GitHub Stats : 
 ![](https://github-readme-stats.vercel.app/api?username=DmTriet31&theme=jolly&hide_border=true&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=DmTriet31&theme=jolly&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=DmTriet31&theme=jolly&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
