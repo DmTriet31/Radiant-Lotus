@@ -6,8 +6,8 @@
   <img src="https://cdn.discordapp.com/attachments/1316896145393586227/1357331068688011365/standard_1.gif?ex=67efd090&is=67ee7f10&hm=4250dfedab995219647a7ff3509637d1ed2c9b841abf21b54cf2d87544c2c901&" width="250" alt="Bot Logo" />
 </p>
 
-
-🚀[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&width=435&lines=Radiant+Lotus+;DmTriet)](https://git.io/typing-svg)
+<h1 align="center">
+  🚀 Radiant Lotus 
 </h1>
 
 <p align="center">
@@ -78,7 +78,7 @@ UI/icons/musicicons.js	  Tùy chỉnh icon nhạc
 ```
 ❗ Troubleshooting
 Xem phần "Common Errors" để khắc phục lỗi thường gặp.
-
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&width=435&lines=Radiant+Lotus+;DmTriet)](https://git.io/typing-svg)
 # 📊GitHub Stats :
 ![](https://github-readme-stats.vercel.app/api?username=DmTriet31&theme=jolly&hide_border=true&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=DmTriet31&theme=jolly&hide_border=true)<br/>
