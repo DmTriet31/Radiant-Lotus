@@ -18,7 +18,7 @@ module.exports = {
      
             const BOT_ICON = "https://cdn.discordapp.com/attachments/1367522678420013146/1367522900445495446/standard_1.gif?ex=6814e472&is=681392f2&hm=5e8a8d444f74a6fea7bdda586a483f2e2a2278e3f55ed4a1c30c92366b0a7570&";
             const EMBED_COLOR = "#5865F2"; 
-            const FOOTER_TEXT = "Radiant Lotus | The Discord Operating System • Created by DmTriet";
+            const FOOTER_TEXT = "Radiant Lotus | The Discord Operating System • Created by GlaceYT";
             const COMMANDS_DIR = path.join(__dirname, '../../commands');
             const EXCESS_COMMANDS_DIR = path.join(__dirname, '../../excesscommands');
 
