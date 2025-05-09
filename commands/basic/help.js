@@ -16,7 +16,7 @@ module.exports = {
         
         if (interaction.isCommand && interaction.isCommand()) {
      
-            const BOT_ICON = "https://cdn.discordapp.com/attachments/1316896145393586227/1357331068688011365/standard_1.gif?ex=67efd090&is=67ee7f10&hm=4250dfedab995219647a7ff3509637d1ed2c9b841abf21b54cf2d87544c2c901&";
+            const BOT_ICON = "https://cdn.discordapp.com/attachments/1367522678420013146/1367522834787729548/standard.gif?ex=6814e463&is=681392e3&hm=851175dde7a8e999bfe5a37f0eda1ef9934b76b49e267264c1df6ce6b7d83be6&";
             const EMBED_COLOR = "#5865F2"; 
             const FOOTER_TEXT = "Radiant Lotus | The Discord Operating System • Created by DmTriet";
             const COMMANDS_DIR = path.join(__dirname, '../../commands');
