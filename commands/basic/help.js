@@ -132,7 +132,7 @@ module.exports = {
                         `\`💻\` **Prefix Commands:** ${Object.values(config.excessCommands).some(v => v) ? '`Enabled`' : '`Disabled`'}`,
                         '',
                     ].join('\n'),
-                    author: { name: 'Radiant Lotust • COMMAND CENTER' },
+                    author: { name: 'Radiant Lotus • COMMAND CENTER' },
                     icon: '📚'
                 });
 
