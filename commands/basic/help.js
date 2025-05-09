@@ -16,9 +16,9 @@ module.exports = {
         
         if (interaction.isCommand && interaction.isCommand()) {
      
-            const BOT_ICON = "https://cdn.discordapp.com/emojis/1334648756649590805.png";
+            const BOT_ICON = "https://cdn.discordapp.com/attachments/1316896145393586227/1357331068688011365/standard_1.gif?ex=67efd090&is=67ee7f10&hm=4250dfedab995219647a7ff3509637d1ed2c9b841abf21b54cf2d87544c2c901&";
             const EMBED_COLOR = "#5865F2"; 
-            const FOOTER_TEXT = "All In One | The Discord Operating System • Created by GlaceYT";
+            const FOOTER_TEXT = "Radiant Lotus | The Discord Operating System • Created by DmTriet";
             const COMMANDS_DIR = path.join(__dirname, '../../commands');
             const EXCESS_COMMANDS_DIR = path.join(__dirname, '../../excesscommands');
 
@@ -117,7 +117,7 @@ module.exports = {
 
                 
                 pages.push({
-                    title: '✨ ALL IN ONE BOT',
+                    title: '✨ Radiant LotusT',
                     description: [
                         '### THE DISCORD OPERATING SYSTEM',
                         '',
@@ -132,7 +132,7 @@ module.exports = {
                         `\`💻\` **Prefix Commands:** ${Object.values(config.excessCommands).some(v => v) ? '`Enabled`' : '`Disabled`'}`,
                         '',
                     ].join('\n'),
-                    author: { name: 'ALL IN ONE BOT • COMMAND CENTER' },
+                    author: { name: 'Radiant LotusT • COMMAND CENTER' },
                     icon: '📚'
                 });
 
@@ -381,7 +381,7 @@ module.exports = {
                     url: "https://discord.gg/xQF9f9yUEM"
                 })
                 .setDescription('> ⚠️ This command can only be used as a slash command!\n> Please use `/help` instead.')
-                .setFooter({ text: 'All In One Bot • Error' })
+                .setFooter({ text: 'Radiant Lotust • Error' })
                 .setTimestamp();
 
           
