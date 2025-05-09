@@ -28,7 +28,76 @@ module.exports = {
         const guildId = message.guild.id;
         const channelId = message.channel.id;
         const content = message.content.toLowerCase().trim(); 
+// === +1 legit handler ===
+const fixedChannelId = '1367651773963178054'; // Kênh dùng lệnh +1 legit
+if (channelId === fixedChannelId) {
+    const legitRegex = /^\+1\s+legit\s+.+/i;
+    if (legitRegex.test(message.content.trim())) {
+        const emojis = ['✅', '👍', '🔥'];
+        try {
+            for (const emoji of emojis) {
+                await message.react(emoji);
+            }
+        } catch (error) {
+            console.error('Lỗi khi thêm emoji +1 legit:', error);
+        }
+    }
+}
 
+// === auto react Locket ảnh/video trong kênh media ===
+const mediaChannelId = '1367995671424270357'; // Kênh chứa ảnh/video chung
+if (channelId === mediaChannelId) {
+    const hasImage = message.attachments.some(att => att.contentType?.startsWith('image/'));
+    const hasVideo = message.attachments.some(att => att.contentType?.startsWith('video/'));
+
+    if (hasImage || hasVideo) {
+        const mediaEmojis = ['❤️', '👍', '🔥'];
+        try {
+            for (const emoji of mediaEmojis) {
+                await message.react(emoji);
+            }
+        } catch (err) {
+            console.error('Lỗi khi auto react ảnh/video:', err);
+        }
+    }
+}
+
+// === auto react kênh meme ===
+const memeChannelId = '1367120796891353129'; // Kênh chứa meme
+if (channelId === memeChannelId) {
+    // Regex để kiểm tra có URL trong tin nhắn không
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const hasLink = urlRegex.test(message.content);
+
+    if (hasLink) {
+        const memeEmojis = ['🤣', '💀', '🔥'];
+        try {
+            for (const emoji of memeEmojis) {
+                await message.react(emoji);
+            }
+        } catch (err) {
+            console.error('Lỗi khi auto react meme:', err);
+        }
+    }
+}
+
+
+// === auto react kênh selfie ===
+const selfieChannelId = '1367120801370996858'; // Kênh gửi ảnh selfie
+if (channelId === selfieChannelId) {
+    const isSelfie = message.attachments.some(att => att.contentType?.startsWith('image/'));
+
+    if (isSelfie) {
+        const selfieEmojis = ['❤️', '😍', '🔥'];
+        try {
+            for (const emoji of selfieEmojis) {
+                await message.react(emoji);
+            }
+        } catch (err) {
+            console.error('Lỗi khi auto react selfie:', err);
+        }
+    }
+}
         const countingData = await countingCollection.findOne({ guildId });
 
         if (countingData && countingData.channelId === channelId && countingData.status) {
