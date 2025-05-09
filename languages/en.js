@@ -21,7 +21,7 @@ const enLang = {
     //invite.js
     inviteTitle: "Invite Link",
     inviteDescription: "Click [here]({inviteURL}) to invite the bot to your server!",
-    inviteImageURL: "https://cdn.discordapp.com/attachments/1316896145393586227/1357330377693331566/standard.gif?ex=67efcfec&is=67ee7e6c&hm=fb05e526452ed3144bf0f1f48ef58240ca81f680b48bdf9528babbe2345ac4a2&",
+    inviteImageURL: "https://cdn.discordapp.com/attachments/1367522678420013146/1367522834787729548/standard.gif?ex=6814e463&is=681392e3&hm=851175dde7a8e999bfe5a37f0eda1ef9934b76b49e267264c1df6ce6b7d83be6&",
     //ping.js
     pingDescription: "Ping!",
     pingTitle: "Pong! 🏓",
