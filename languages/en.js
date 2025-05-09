@@ -21,7 +21,7 @@ const enLang = {
     //invite.js
     inviteTitle: "Invite Link",
     inviteDescription: "Click [here]({inviteURL}) to invite the bot to your server!",
-    inviteImageURL: "https://cdn.discordapp.com/attachments/1246408947708072027/1256597293323256000/invite.png?ex=668158ed&is=6680076d&hm=030c83f567ffdaf0bebb95e50baaec8bb8a8394fa1b7717cc43c3622447f58e3&",
+    inviteImageURL: "https://cdn.discordapp.com/attachments/1316896145393586227/1357330377693331566/standard.gif?ex=67efcfec&is=67ee7e6c&hm=fb05e526452ed3144bf0f1f48ef58240ca81f680b48bdf9528babbe2345ac4a2&",
     //ping.js
     pingDescription: "Ping!",
     pingTitle: "Pong! 🏓",
@@ -52,7 +52,7 @@ const enLang = {
       serverCreatedOn: "Server Created On"
   },
   serverInfoError: "An error occurred while fetching server information.",
-  supportServerLink: "https://discord.gg/xQF9f9yUEM",
+  supportServerLink: "https://discord.gg/ssh2hgpadH",
 
   // For subcommands
   serverIconTitle: "Server Icon",
@@ -61,10 +61,10 @@ const enLang = {
     // support.js
     supportDescription: "Support server of this Bot",
     supportTitle: "Support Server",
-    supportServerLink: "https://discord.gg/xQF9f9yUEM",
-    githubLink: "https://github.com/GlaceYT",
-    replitLink: "https://replit.com/@GlaceYT",
-    youtubeLink: "https://www.youtube.com/@GlaceYT",
+    supportServerLink: "https://discord.gg/ssh2hgpadH",
+    githubLink: "https://github.com/DmTriet31",
+    replitLink: "https://replit.com/@DmTriet31",
+    youtubeLink: "https://www.youtube.com/@DmTriet31",
     supportIconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1230824519220985896/6280-2.gif?ex=6638ae28&is=66375ca8&hm=13e4a1b91a95b2934a39de1876e66c11711c7b30ac1a91c2a158f2f2ed1c2fc6&',
     supportImageURL: 'https://cdn.discordapp.com/attachments/1113800537402527903/1236803979996958740/11.png?ex=663956f7&is=66380577&hm=3b3c19a11adcb979517a133f2907f671305d23f1f5092cf7df043e6d5cab07bc&',
     supportDescriptionTitle: "Join our Discord server for support and updates",
