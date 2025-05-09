@@ -156,10 +156,10 @@ async function sendTicketEmbed(channel) {
         .setCustomId('select_ticket_type')
         .setPlaceholder('Choose ticket type')
         .addOptions([
-            { label: '🆘 Support', value: 'support' },
-            { label: '📂 Suggestion', value: 'suggestion' },
-            { label: '💜 Feedback', value: 'feedback' },
-            { label: '⚠️ Report', value: 'report' }
+            { label: '🆘 Hỗ trợ', value: 'support' },
+            { label: '📂 Góp ý', value: 'suggestion' },
+            { label: '💜 Nhận xét', value: 'feedback' },
+            { label: '⚠️ Tố cáo', value: 'report' }
         ]);
 
     const row = new ActionRowBuilder().addComponents(menu);
