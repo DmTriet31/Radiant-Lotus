@@ -117,7 +117,7 @@ module.exports = {
 
                 
                 pages.push({
-                    title: '✨ Radiant LotusT',
+                    title: '✨ Radiant Lotus',
                     description: [
                         '### THE DISCORD OPERATING SYSTEM',
                         '',
