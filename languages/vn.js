@@ -75,7 +75,7 @@ const enLang = {
     youtube: "YouTube",
     // userinfo.js
     userinfoDescription: "Hiển thị thông tin chi tiết về người dùng",
-    userinfoTargetDescription: "Người dùng để lấy thông tin"",
+    userinfoTargetDescription: "Người dùng để lấy thông tin",
     userinfoTitle: "👤 Thông tin người dùng",
     userinfoUsername: "Tên người dùng",
     userinfoUserID: "ID người dùng",
