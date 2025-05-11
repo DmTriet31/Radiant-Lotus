@@ -1,4 +1,4 @@
-const enLang = {
+const vnLang = {
     error: 'An error occurred while processing your command.',
     commandDisabled: 'This command is currently disabled.',
     //channelinfo.js
