@@ -19,7 +19,7 @@ module.exports = (client) => {
       .setFooter({ text: `Radiant Lotus • ${new Date().toLocaleTimeString()}` });
 
     await channel.send({
-      content: `🎉 Chào mừng <@${member.id}> đã đến với server, <@&staff> có member mới nè`,
+      content: `🎉 Chào mừng <@${member.id}> đã đến với server,<@&1367120686405128306> có member mới nè`,
       embeds: [embed]
     });
   });
