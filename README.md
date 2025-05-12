@@ -1,52 +1,35 @@
-![Animated Background](https://i.imgur.com/ECZKmlO.gif)
+<!-- Background animated -->
+![Animated Background](https://cdn.discordapp.com/attachments/1316896145393586227/1357330377693331566/standard.gif?ex=67efcfec&is=67ee7e6c&hm=fb05e526452ed3144bf0f1f48ef58240ca81f680b48bdf9528babbe2345ac4a2&)
 
-<h1 align="center" style="font-family: Arial, sans-serif; color: #FF6F61; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
-  ALL IN ONE BOT 1.2.2
+<!-- Logo animated -->
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/1316896145393586227/1357331068688011365/standard_1.gif?ex=67efd090&is=67ee7f10&hm=4250dfedab995219647a7ff3509637d1ed2c9b841abf21b54cf2d87544c2c901&" width="250" alt="Bot Logo" />
+</p>
+
+<h1 align="center">
+  🚀 Radiant Lotus
 </h1>
 
 <p align="center">
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square&logo=opensource"
-      alt="License: MIT" />
-  </a>
-
-  <a href="https://www.paypal.me/@GlaceYT">
-    <img src="https://img.shields.io/badge/Donate-PayPal-0079C1?style=flat-square&logo=paypal"
-      alt="Donate" />
+  <a href="https://paypal.me/DmTriet">
+    <img src="https://img.shields.io/badge/Donate-PayPal-0079C1?style=flat-square&logo=paypal" alt="Donate" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/channel/@GlaceYT">
-    <img src="https://img.shields.io/badge/YouTube-Subscribe-red?style=flat-square&logo=youtube"
-      alt="YouTube" />
+  <a href="https://www.youtube.com/@DmTriet.31">
+    <img src="https://img.shields.io/badge/YouTube-Subscribe-red?style=flat-square&logo=youtube" alt="YouTube" />
   </a>
-
-  <a href="https://discord.gg/xQF9f9yUEM">
-    <img src="https://img.shields.io/badge/Discord-Join-blue?style=flat-square&logo=discord"
-      alt="Join Discord" />
+  <a href="https://discord.gg/ssh2hgpadH">
+    <img src="https://img.shields.io/badge/Discord-Join-blue?style=flat-square&logo=discord" alt="Join Discord" />
   </a>
-
-  <a href="https://www.instagram.com/glaceytt">
-    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=flat-square&logo=instagram"
-      alt="Instagram" />
+  <a href="https://www.instagram.com/dmtriet_/">
+    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=flat-square&logo=instagram" alt="Instagram" />
   </a>
-
-  <a href="https://www.facebook.com/youulewd/">
-    <img src="https://img.shields.io/badge/Facebook-Follow-1877F2?style=flat-square&logo=facebook"
-      alt="Facebook" />
+  <a href="https://www.facebook.com/DmTriet.06">
+    <img src="https://img.shields.io/badge/Facebook-Follow-1877F2?style=flat-square&logo=facebook" alt="Facebook" />
   </a>
 </p>
-
-<h2>Discord All-in-One BOT Installation Guide</h2>
-
-<h3>How to Install</h3>
-
-<h4>Step 1: Update <code>config.json</code> [ USE ENV FILES ]</h4>
-
-<ol>
-  <li>Open the <code>config.json</code> and add your MongoDB URL.</li>
-</ol>
 
 <h4>ENV SETUP</h4>
 
@@ -61,52 +44,55 @@ INSTAGRAM_ACCESS_TOKEN=,
 MONGODB_URI=
 GEMINI_API=
 </pre>
+---
 
-<h4>Step 2: Set Up Hosting Service</h4>
+## 📦 Installation Guide
 
-<ol>
-  <li>Go to your preferred hosting service. For this guide, we use <a href="https://render.com/">Render</a>.</li>
-  <li>In the Build & Deploy section, paste your repository URL.</li>
-</ol>
+### ✅ Step 1: Configure `config.json`
 
-<h4>Step 3: Add Build and Start Commands</h4>
-<pre>
-Run the following commands to install dependencies and start your bot:
+- Mở file `config.json`.
+- Thêm MongoDB URL của bạn vào.
 
+---
+
+### ✅ Step 2: Deploy Bot
+
+- Chọn dịch vụ host như [Render](https://render.com/).
+- Dán URL GitHub của bạn vào phần Build & Deploy.
+
+---
+
+### ✅ Step 3: Cài Đặt và Chạy Bot
+
+```bash
 npm install
-node index.js
-</pre>
+```
+```bash
+node index.js 
+```
 
-<h4>Step 4: Get Your Bot Token</h4>
-<ol>
-  <li>Navigate to the Discord Developer Portal.</li>
-  <li>Find your application, and retrieve the bot token from the "Bot" section.</li>
-</ol>
+### ✅ Step 4: Lấy Token Bot
+Truy cập [Discord Developer Portal](https://discord.com/developers/applications)
+Vào ứng dụng bạn đã tạo → Tab "Bot" → Copy token.
 
-<h4>Step 5: Set Environment Variable</h4>
-<ol>
-  <li>Create an environment variable with the following details:</li>
-  <ul>
-    <li>Key: TOKEN</li>
-    <li>Value: [your bot token]</li>
-  </ul>
-  <li>Deploy your application using your hosting service’s deployment process.</li>
-</ol>
+### ✅ Step 5: Thiết Lập Biến Môi Trường
+Tạo biến môi trường: Key: TOKEN
+                     Value: [Your Bot Token]
 
-<h4>Step 6: Wait and Test</h4>
-<ol>
-  <li>Wait approximately five minutes for your bot to deploy and start up.</li>
-  <li>Test your bot by sending commands to ensure it is operational.</li>
-</ol>
+### ✅ Step 6: Khởi động và kiểm tra bot
+Đợi khoảng 5 phút để bot hoạt động.
+Kiểm tra bot bằng cách gửi lệnh trong Discord.
+```bash
+🔧 Useful Files
+File                      Mô Tả
+events/ready.js	          Cấu hình trạng thái bot
+UI/banners/musicard.js    Tùy chỉnh thẻ nhạc
+UI/icons/musicicons.js	  Tùy chỉnh icon nhạc
+```
+❗ Troubleshooting
+Xem phần "Common Errors" để khắc phục lỗi thường gặp.
 
-<p>🎉 Congratulations! Your bot is now up and running. 🥳</p>
-
-<h3>Additional Resources</h3>
-<p><strong>Video Tutorial:</strong> If you prefer a video guide, watch this YouTube tutorial [ Soon ].</p>
-<p><strong>Common Errors:</strong> Consult the errors section for troubleshooting.</p>
-
-<h3>Useful Files</h3>
-<ul>
-  <li><code>UI/banners/musicard.js</code>: Change, add, or remove music cards here.</li>
-  <li><code>UI/icons/musicicons.js</code>: Change, add, or remove music icons here.</li>
-</ul>
+# 📊GitHub Stats :
+![](https://github-readme-stats.vercel.app/api?username=DmTriet31&theme=jolly&hide_border=true&include_all_commits=false&count_private=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=DmTriet31&theme=jolly&hide_border=true)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=DmTriet31&theme=jolly&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
