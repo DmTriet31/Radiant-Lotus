@@ -76,7 +76,7 @@ events/ready.js	          Cấu hình trạng thái bot
 UI/banners/musicard.js    Tùy chỉnh thẻ nhạc
 UI/icons/musicicons.js	  Tùy chỉnh icon nhạc
 ```
-<h4> ### ✅ Step 6 ENV SETUP</h4>
+<h4> ✅ Step 6 ENV SETUP</h4>
 
 <pre>
 TOKEN=, 
