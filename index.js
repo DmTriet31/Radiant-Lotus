@@ -61,6 +61,10 @@ const loadEventHandlers = () => {
     reactionRoleHandler(client);
     logSystem('REACTION ROLES');
 
+    const welcomeMemberHandler = require('./events/welcomeMember');
+    welcomeMemberHandler(client);
+    logSystem('WELCOME MEMBER');
+
     console.log(`\n${colors.magenta}${colors.bright}😀 EMOJI & AFK SYSTEMS${colors.reset}`);
     console.log('─'.repeat(40));
 
