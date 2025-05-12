@@ -31,19 +31,6 @@
   </a>
 </p>
 
-<h4>ENV SETUP</h4>
-
-<pre>
-TOKEN=, 
-FACEBOOK_ACCESS_TOKEN=, 
-FORTNITE_API_KEY=, 
-YOUTUBE_API_KEY=, 
-TWITCH_CLIENT_ID=, 
-TWITCH_ACCESS_TOKEN=, 
-INSTAGRAM_ACCESS_TOKEN=, 
-MONGODB_URI=
-GEMINI_API=
-</pre>
 ---
 
 ## 📦 Installation Guide
@@ -89,6 +76,19 @@ events/ready.js	          Cấu hình trạng thái bot
 UI/banners/musicard.js    Tùy chỉnh thẻ nhạc
 UI/icons/musicicons.js	  Tùy chỉnh icon nhạc
 ```
+<h4> ### ✅ Step 6 ENV SETUP</h4>
+
+<pre>
+TOKEN=, 
+FACEBOOK_ACCESS_TOKEN=, 
+FORTNITE_API_KEY=, 
+YOUTUBE_API_KEY=, 
+TWITCH_CLIENT_ID=, 
+TWITCH_ACCESS_TOKEN=, 
+INSTAGRAM_ACCESS_TOKEN=, 
+MONGODB_URI=
+GEMINI_API=
+</pre>
 ❗ Troubleshooting
 Xem phần "Common Errors" để khắc phục lỗi thường gặp.
 
