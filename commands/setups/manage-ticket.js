@@ -306,10 +306,14 @@ async function sendTicketEmbed(channel) {
     const embed = new EmbedBuilder()
         .setAuthor({ name: "Welcome to Ticket Support", iconURL: ticketIcons.mainIcon })
         .setDescription(
-            '- Please click below menu to create a new ticket.\n\n' +
-            '**Ticket Guidelines:**\n' +
-            '- Empty tickets are not permitted.\n' +
-            '- Please be patient while waiting for a response from our support team.'
+'- Hướng dẫn sử dụng Ticket:\n' +
+'- Vui lòng nhấn vào menu bên dưới để tạo ticket mới\n' +
+'- Không được tạo ticket trống\n' +
+'- Vui lòng kiên nhẫn chờ phản hồi từ đội ngũ hỗ trợ\n\n' +
+'- Lưu ý:\n' +
+'❌ Nếu bạn mở ticket không có mục đích, bạn sẽ bị:\n' +
+'⏰ Timeout 6 tiếng (lần 1-2)\n' +
+'🔨 Ban khỏi server (lần 3)'
         )
         .setFooter({ text: 'We are here to Help!', iconURL: ticketIcons.modIcon })
         .setColor('#00FF00')
@@ -322,10 +326,10 @@ async function sendTicketEmbed(channel) {
         .setCustomId('select_ticket_type')
         .setPlaceholder('Choose ticket type')
         .addOptions([
-            { label: '🆘 Support', value: 'support' },
-            { label: '📂 Suggestion', value: 'suggestion' },
-            { label: '💜 Feedback', value: 'feedback' },
-            { label: '⚠️ Report', value: 'report' }
+            { label: '🆘 Hỗ trợ', value: 'support' },
+            { label: '📂 Gợi ý', value: 'suggestion' },
+            { label: '💜 Nhận xét', value: 'feedback' },
+            { label: '⚠️ Tố cáo', value: 'report' }
         ]);
 
     const row = new ActionRowBuilder().addComponents(menu);
