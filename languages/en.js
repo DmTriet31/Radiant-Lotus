@@ -725,4 +725,3 @@ const enLang = {
   };
   
   module.exports = enLang;
-  
