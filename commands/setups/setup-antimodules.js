@@ -117,7 +117,7 @@ module.exports = {
                         messageCount: 5,
                         timeWindow: 5000,
                         action: "timeout",
-                        duration: 60000
+                        duration: 3600000
                     },
                     antiLink: {
                         enabled: antiLink,
@@ -134,7 +134,7 @@ module.exports = {
                     antiRaid: {
                         enabled: antiRaid,
                         joinLimit: 5,
-                        timeWindow: 60000,
+                        timeWindow: 3600000,
                         action: "kick"
                     }
                 };
