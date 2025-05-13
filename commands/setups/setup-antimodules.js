@@ -122,7 +122,7 @@ module.exports = {
                     antiLink: {
                         enabled: antiLink,
                         mode: "full",
-                        linkInterval: 60000
+                        linkInterval: 3600000
                     },
                     antiNuke: {
                         enabled: antiNuke,
