@@ -252,7 +252,10 @@ async function handleTicketCreation(interaction, client) {
         const ticketId = `${user.id}-${ticketChannel.id}`;
         const ticketEmbed = new EmbedBuilder()
             .setAuthor({ name: `${ticketType.charAt(0).toUpperCase() + ticketType.slice(1)} Ticket`, iconURL: ticketIcons.modIcon })
-            .setDescription(`Hello ${user}, welcome to our support!\nPlease describe your issue in detail.`)
+            .setDescription(`🎟️ Chào mừng ${user} đến với hệ thống hỗ trợ! Vui lòng mô tả vấn đề của bạn càng chi tiết càng tốt để chúng tôi có thể giúp đỡ nhanh chóng.
+Một thành viên trong đội ngũ sẽ phản hồi sớm nhất có thể.
+
+🔒 Chỉ bạn và nhân viên có thể thấy ticket này.`)
             .setFooter({ text: 'Your satisfaction is our priority', iconURL: ticketIcons.heartIcon })
             .setColor('#00FF00')
             .setTimestamp();
