@@ -28,7 +28,7 @@ module.exports = {
                     { name: "Bot Usage", value: "bot_usage" },
                     { name: "Trading & Selling", value: "trading_selling" },
                     { name: "Server Rules", value: "Server Rules" },
-                    { name: "Spoilers", value: "spoilers" },
+                    { name: "Punishment", value: "Punishment" },
                     { name: "Self-Promotion", value: "self_promotion" },
                     { name: "Moderation", value: "moderation" }
                 )
