@@ -1,4 +1,4 @@
-const { Events, EmbedBuilder } = require('discord.js');
+const { Events, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
 module.exports = (client) => {
   client.on(Events.GuildMemberAdd, async member => {
@@ -16,11 +16,28 @@ module.exports = (client) => {
         `Hi vọng bạn có những khoảng khắc tuyệt vời tại server!`
       )
       .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
-      .setFooter({ text: `Radiant Lotus • ${new Date().toLocaleTimeString()}` });
+      .setFooter({
+        text: `Radiant Lotus • ${new Date().toLocaleTimeString()}`,
+        iconURL: 'https://cdn.discordapp.com/attachments/1367522678420013146/1367522900445495446/standard_1.gif?ex=6814e472&is=681392f2&hm=5e8a8d444f74a6fea7bdda586a483f2e2a2278e3f55ed4a1c30c92366b0a7570&'
+      });
 
-    await channel.send({
-      content: `🎉 Chào mừng <@${member.id}> đã đến với server,<@&1367120686405128306> có member mới nè`,
-      embeds: [embed]
+    // Tạo nút Discord Invite
+    const row = new ActionRowBuilder()
+      .addComponents(
+        new ButtonBuilder()
+          .setLabel('Join Discord')
+          .setStyle(ButtonStyle.Link)
+          .setURL('https://discord.gg/ssh2hgpadH')
+      );
+
+    // Gửi tin nhắn và chèn nút
+    const message = await channel.send({
+      content: `🎉 Chào mừng <@${member.id}> đã đến với server, <@&1367120686405128306> có member mới nè`,
+      embeds: [embed],
+      components: [row]
     });
+
+    // Thêm phản ứng emoji
+    await message.react('<a:62802:1210522480901496863>');
   });
 };
