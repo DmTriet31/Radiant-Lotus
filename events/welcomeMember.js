@@ -3,7 +3,7 @@ const { Events, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = r
 module.exports = (client) => {
   client.on(Events.GuildMemberAdd, async member => {
     const channel = member.guild.channels.cache.find(
-      ch => ch.name === 'welcome' || ch.id === '1367506963696713891' // sửa lại nếu cần
+      ch => ch.name === 'welcome' || ch.id === '1367506963696713891'
     );
     if (!channel) return;
 
@@ -21,23 +21,18 @@ module.exports = (client) => {
         iconURL: 'https://cdn.discordapp.com/attachments/1367522678420013146/1367522900445495446/standard_1.gif?ex=6814e472&is=681392f2&hm=5e8a8d444f74a6fea7bdda586a483f2e2a2278e3f55ed4a1c30c92366b0a7570&'
       });
 
-    // Tạo nút Discord Invite
-    const row = new ActionRowBuilder()
-      .addComponents(
-        new ButtonBuilder()
-          .setLabel('Join Discord')
-          .setStyle(ButtonStyle.Link)
-          .setURL('https://discord.gg/ssh2hgpadH')
-      );
+    const row = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setLabel('.gg/ssh2hgpadH')
+        .setEmoji('<a:62802:1210522480901496863>') // ID emoji custom
+        .setStyle(ButtonStyle.Link)
+        .setURL('https://discord.gg/ssh2hgpadH')
+    );
 
-    // Gửi tin nhắn và chèn nút
-    const message = await channel.send({
-      content: `🎉 Chào mừng <@${member.id}> đã đến với server, <@&1367120686405128306> có member mới nè`,
+    await channel.send({
+      content: `🎉 Chào mừng <@${member.id}> đã đến với server, <@&1367120686405128306> có member mới nè!`,
       embeds: [embed],
       components: [row]
     });
-
-    // Thêm phản ứng emoji
-    await message.react('<a:62802:1210522480901496863>');
   });
 };
