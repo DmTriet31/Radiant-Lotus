@@ -29,7 +29,7 @@ module.exports = {
                     { name: "Trading & Selling", value: "trading_selling" },
                     { name: "Server Rules", value: "Server Rules" },
                     { name: "Punishment", value: "Punishment" },
-                    { name: "Self-Promotion", value: "self_promotion" },
+                    { name: "Message", value: "Message" },
                     { name: "Moderation", value: "moderation" }
                 )
         )
