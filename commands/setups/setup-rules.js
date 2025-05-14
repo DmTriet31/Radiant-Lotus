@@ -17,6 +17,7 @@ module.exports = {
                 .setRequired(true)
                 .addChoices(
                     { name: "All Rules", value: "all" },
+                    { name: "Server Rules", value: "Server_Rules" },
                     { name: "Spam", value: "spam" },
                     { name: "NSFW", value: "nsfw" },
                     { name: "Discord Terms", value: "discord_terms" },
