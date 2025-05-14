@@ -27,9 +27,9 @@ module.exports = {
                     { name: "Mic Spam", value: "mic_spam" },
                     { name: "Bot Usage", value: "bot_usage" },
                     { name: "Trading & Selling", value: "trading_selling" },
-                    { name: "Server Rules", value: "Server Rules" },
-                    { name: "Punishment", value: "Punishment" },
-                    { name: "Message", value: "Message" },
+                    { name: "Language", value: "language" },
+                    { name: "Spoilers", value: "spoilers" },
+                    { name: "Self-Promotion", value: "self_promotion" },
                     { name: "Moderation", value: "moderation" }
                 )
         )
