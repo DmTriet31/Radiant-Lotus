@@ -101,32 +101,31 @@ const ruleEmbeds = {
 
     serverRules: new EmbedBuilder()
         .setColor("#FFD700")
-        .setTitle("Radiant Lotus")
+        .setTitle("<a:rainbowvivi:1310075817606385724> Luật Chung Cho Toàn Bộ Thành Viên <a:rainbowvivi:1310075817606385724>")
         .setDescription(
-            ":rainbowvivi: Luật Chung Cho Toàn Bộ Thành Viên :rainbowvivi:\n\n" +
-            ":RL_pin: Để giữ cho nơi đây luôn vui vẻ - tích cực, chúng mình mong các thành viên tuân thủ một vài điều đơn giản sau:\n\n" +
+            "<a:<a:RL_pin:1367510433778372668>:1367510433778372668> Để giữ cho nơi đây luôn vui vẻ - tích cực, chúng mình mong các thành viên tuân thủ một vài điều đơn giản sau:\n\n" +
             ":RL_arrow~1: Tôn trọng lẫn nhau :handshake_tone1:\n" +
-            ":pinkdot: Không chửi bới, toxic hay công kích cá nhân. Tuyệt đối không phân biệt chủng tộc, tôn giáo, giới tính...\n\n" +
+            "<:pinkdot:1245923688558100500>: Không chửi bới, toxic hay công kích cá nhân. Tuyệt đối không phân biệt chủng tộc, tôn giáo, giới tính...\n\n" +
             ":RL_arrow~1: Không gửi nội dung phản cảm :underage:\n" +
-            ":pinkdot: Cấm NSFW, bạo lực, nội dung gây khó chịu. Không share link độc hại, giả mạo, scam.\n\n" +
+            "<:pinkdot:1245923688558100500>: Cấm NSFW, bạo lực, nội dung gây khó chịu. Không share link độc hại, giả mạo, scam.\n\n" +
             ":RL_arrow~1: Không spam, quảng cáo :no_entry_sign:\n" +
-            ":pinkdot: Hạn chế spam emoji, sticker, ảnh meme liên tục - dù vui nhưng cũng có điểm dừng.\n" +
-            ":pinkdot: Không quảng cáo server khác hoặc dịch vụ bên ngoài (ib cho owner).\n\n" +
+            "<:pinkdot:1245923688558100500>: Hạn chế spam emoji, sticker, ảnh meme liên tục - dù vui nhưng cũng có điểm dừng.\n" +
+            "<:pinkdot:1245923688558100500>: Không quảng cáo server khác hoặc dịch vụ bên ngoài (ib cho owner).\n\n" +
             ":RL_arrow~1: Dùng đúng kênh :dividers:\n" +
-            ":pinkdot: Mỗi kênh đều có mục đích riêng - đăng đúng nội dung đúng chỗ. Lộn xộn là bị quét liền!!!\n\n" +
+            "<:pinkdot:1245923688558100500>: Mỗi kênh đều có mục đích riêng - đăng đúng nội dung đúng chỗ. Lộn xộn là bị quét liền!!!\n\n" +
             ":RL_arrow~1: Không ping staff bừa bãi :bell:\n" +
-            ":pinkdot: Chỉ ping khi có vấn đề thật sự.\n" +
-            ":pinkdot: Tránh spam tag hoặc cố ý gây phiền phức.\n\n"
+            "<:pinkdot:1245923688558100500>: Chỉ ping khi có vấn đề thật sự.\n" +
+            "<:pinkdot:1245923688558100500>: Tránh spam tag hoặc cố ý gây phiền phức.\n\n"
         ),
 
     punishment: new EmbedBuilder()
         .setColor("#A52A2A")
         .setTitle("Radiant Lotus")
         .setDescription(
-            ":RL_pin: Hình phạt nếu vi phạm tuỳ theo mức độ nặng nhẹ, bạn có thể bị:\n" +
-            ":RL_Reddot: Nhắc nhở nhẹ qua DM hoặc kênh riêng.\n" +
-            ":RL_Reddot: Mute ( tạm khoá chat 1h ), kick, ban.\n" +
-            ":RL_Reddot: Cấm vĩnh viễn khỏi server nếu tái phạm hoặc vi phạm nghiêm trọng.\n"
+            " :<a:RL_pin:1367510433778372668>: Hình phạt nếu vi phạm tuỳ theo mức độ nặng nhẹ, bạn có thể bị:\n" +
+            " :<a:RL_Reddot:1367541939662225409>: Nhắc nhở nhẹ qua DM hoặc kênh riêng.\n" +
+            " :<a:RL_Reddot:1367541939662225409>: Mute ( tạm khoá chat 1h ), kick, ban.\n" +
+            " :<a:RL_Reddot:1367541939662225409>: Cấm vĩnh viễn khỏi server nếu tái phạm hoặc vi phạm nghiêm trọng.\n"
         ),
 
     moderation: new EmbedBuilder()
@@ -140,13 +139,13 @@ const ruleEmbeds = {
 
     message: new EmbedBuilder()
         .setColor("#9370DB")
-        .setTitle("Radiant Lotus")
+        .setTitle("<a:RL_rainletter:1371820268552589437>  Một chút nhắn nhủ <a:RL_rainletter:1371820268552589437>")
         .setDescription(
-            ":RL_rainletter:  Một chút nhắn nhủ :RL_rainletter:\n\n" +
+            "<a:RL_rainletter:1371820268552589437>  Một chút nhắn nhủ <a:RL_rainletter:1371820268552589437>\n\n" +
             "Server không cần bạn phải hoàn hảo - chỉ cần tôn trọng người khác, vui là chính.\n" +
             "Tụi mình không cần một cộng đồng quá đông - tụi mình cần một nơi chất lượng, nơi mà ai cũng thoải mái khi trò chuyện, chia sẻ và luôn là chính mình :heartpulse:\n\n" +
             "Cảm ơn vì bạn đã đọc luật! Chúc bạn có khoảng thời gian vui vẻ tại Radiant Lotus :cherry_blossom:\n" +
-            "Nếu có vấn đề gì liên hệ @dmtriet hoặc #🆘〢・ticket"
+            "Nếu có vấn đề gì liên hệ @dmtriet hoặc https://discord.com/channels/1367120428648108042/1367120849785716786"
         )
 };
 
