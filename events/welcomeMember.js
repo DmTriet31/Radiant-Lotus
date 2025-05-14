@@ -9,24 +9,30 @@ module.exports = (client) => {
 
     const embed = new EmbedBuilder()
       .setColor(0xff4757)
-      .setTitle('<a:RL_rainbowchloe:1371961708704301207>Welcome To Radiant Lotus <a:RL_rainbowchloe:1371961708704301207>')
+      .setTitle('<a:RL_rainbowchloe:1371961708704301207> Welcome To Radiant Lotus <a:RL_rainbowchloe:1371961708704301207>')
       .setDescription(
         `Chúc bạn có những khoảng khắc vui vẻ và gắn kết với mọi người khi tham gia server, đừng ngần ngại trò chuyện và kết bạn với các thành viên khác nhé.\n\n` +
         `Hãy thoải mái tham gia các cuộc trò chuyện, đóng góp ý tưởng và cùng nhau xây dựng 1 cộng đồng vui vẻ và đoàn kết. ` +
-        `Hi vọng bạn có những khoảng khắc tuyệt vời tại server!`
+        `Hi vọng bạn có những khoảng khắc tuyệt vời tại server!\n\n` +
+        `Để tham gia server, bấm vào [**link này**](https://discord.gg/ssh2hgpadH) để tham gia nhé!`
       )
       .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
       .setFooter({
         text: `Radiant Lotus • ${new Date().toLocaleTimeString()}`,
-        iconURL: 'https://cdn.discordapp.com/attachments/1367522678420013146/1367522900445495446/standard_1.gif?ex=6814e472&is=681392f2&hm=5e8a8d444f74a6fea7bdda586a483f2e2a2278e3f55ed4a1c30c92366b0a7570&'
+        iconURL: 'https://cdn.discordapp.com/attachments/1367522678420013146/1367522900445495446/standard_1.gif'
       });
 
     const row = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
         .setLabel('.gg/ssh2hgpadH')
-        .setEmoji('<a:62802:1210522480901496863>') // ID emoji custom
         .setStyle(ButtonStyle.Link)
-        .setURL('https://discord.gg/ssh2hgpadH')
+        .setURL('https://discord.com/channels/1367120428648108042/1367120774300700763') // Link mời của server
+        .setEmoji('<a:62802:1210522480901496863>'),
+
+      new ButtonBuilder()
+        .setCustomId('reaction-emoji')
+        .setStyle(ButtonStyle.Secondary)
+        .setEmoji('<a:62802:1210522480901496863>')
     );
 
     await channel.send({
