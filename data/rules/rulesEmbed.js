@@ -3,135 +3,135 @@ const { EmbedBuilder } = require("discord.js");
 const ruleEmbeds = {
     spam: new EmbedBuilder()
         .setColor("Red")
-        .setTitle("🚫 Spam Rules")
+        .setTitle("🚫 Quy Tắc Spam")
         .setDescription(
-            "**1️⃣ No excessive messages:** Avoid sending too many messages in a short time.\n" +
-            "**2️⃣ No emoji spam:** Do not flood chat with emojis or stickers.\n" +
-            "**3️⃣ No reaction spam:** Repeatedly adding/removing reactions is disruptive.\n" +
-            "**4️⃣ No copy-pasta:** Long, repetitive text blocks are not allowed.\n" +
-            "**5️⃣ No self-promotion spam:** Promoting your content excessively is forbidden."
+            "**1️⃣ Không gửi quá nhiều tin nhắn:** Tránh gửi quá nhiều tin nhắn trong thời gian ngắn.\n" +
+            "**2️⃣ Không spam biểu tượng cảm xúc:** Không làm ngập chat bằng emoji hoặc sticker.\n" +
+            "**3️⃣ Không spam phản ứng:** Việc thêm/xoá phản ứng liên tục là gây rối.\n" +
+            "**4️⃣ Không dùng văn bản lặp lại:** Không được gửi các đoạn văn bản dài và lặp đi lặp lại.\n" +
+            "**5️⃣ Không spam quảng cáo:** Không được quảng bá nội dung cá nhân một cách quá mức."
         ),
 
     nsfw: new EmbedBuilder()
         .setColor("DarkPurple")
-        .setTitle("🔞 NSFW Rules")
+        .setTitle("🔞 Quy Tắc Nội Dung Nhạy Cảm (NSFW)")
         .setDescription(
-            "**1️⃣ NSFW content is not allowed:** This includes images, text, or links.\n" +
-            "**2️⃣ No inappropriate jokes or discussions:** Keep it clean.\n" +
-            "**3️⃣ No sexual harassment:** Making explicit or suggestive comments is prohibited.\n" +
-            "**4️⃣ No adult roleplay:** This is not an 18+ server."
+            "**1️⃣ Cấm nội dung NSFW:** Bao gồm hình ảnh, văn bản hoặc liên kết.\n" +
+            "**2️⃣ Không đùa cợt hay thảo luận không phù hợp:** Hãy giữ nội dung sạch sẽ.\n" +
+            "**3️⃣ Cấm quấy rối tình dục:** Không được đưa ra những lời lẽ gợi dục hoặc khiếm nhã.\n" +
+            "**4️⃣ Cấm đóng vai người lớn:** Máy chủ này không dành cho người trên 18 tuổi."
         ),
 
     discord_terms: new EmbedBuilder()
         .setColor("Blue")
-        .setTitle("📜 Discord Terms & Conditions")
+        .setTitle("📜 Điều Khoản & Điều Kiện của Discord")
         .setDescription(
-            "**1️⃣ Follow Discord's [Terms of Service](https://discord.com/terms)**.\n" +
-            "**2️⃣ Follow Discord's [Community Guidelines](https://discord.com/guidelines)**.\n" +
-            "**3️⃣ Do not use unauthorized bots, hacks, or exploits.**\n" +
-            "**4️⃣ Do not engage in fraud, scamming, or phishing.**"
+            "**1️⃣ Tuân thủ [Điều khoản dịch vụ của Discord](https://discord.com/terms)**.\n" +
+            "**2️⃣ Tuân thủ [Nguyên tắc cộng đồng của Discord](https://discord.com/guidelines)**.\n" +
+            "**3️⃣ Không sử dụng bot, hack hoặc lỗ hổng trái phép.**\n" +
+            "**4️⃣ Không tham gia vào các hành vi lừa đảo, giả mạo hoặc lừa gạt.**"
         ),
 
     harassment: new EmbedBuilder()
         .setColor("Orange")
-        .setTitle("🚷 Harassment Rules")
+        .setTitle("🚷 Quy Tắc Quấy Rối")
         .setDescription(
-            "**1️⃣ No personal attacks:** Do not insult or target others.\n" +
-            "**2️⃣ No hate speech:** Racism, sexism, homophobia, or any form of discrimination is strictly forbidden.\n" +
-            "**3️⃣ No threats or doxing:** Threatening or sharing private information is a bannable offense.\n" +
-            "**4️⃣ No excessive trolling:** Light jokes are fine, but being disruptive isn't."
+            "**1️⃣ Cấm công kích cá nhân:** Không được xúc phạm hoặc nhắm vào người khác.\n" +
+            "**2️⃣ Cấm phát ngôn thù ghét:** Chủ nghĩa phân biệt chủng tộc, giới tính, LGBT+ hay bất kỳ sự kỳ thị nào đều bị cấm.\n" +
+            "**3️⃣ Không đe dọa hoặc doxing:** Việc đe dọa hay chia sẻ thông tin cá nhân là vi phạm nghiêm trọng.\n" +
+            "**4️⃣ Cấm troll quá mức:** Đùa vui nhẹ nhàng thì được, nhưng gây rối thì không."
         ),
 
     links: new EmbedBuilder()
         .setColor("Yellow")
-        .setTitle("🔗 Link Rules")
+        .setTitle("🔗 Quy Tắc Về Liên Kết")
         .setDescription(
-            "**1️⃣ No posting harmful links:** Malware, scams, or NSFW links are not allowed.\n" +
-            "**2️⃣ No self-promotion outside dedicated channels:** Advertising should only be done where permitted.\n" +
-            "**3️⃣ No IP grabbers, trackers, or shortened links:** Only share safe, verifiable URLs."
+            "**1️⃣ Không đăng liên kết độc hại:** Bao gồm phần mềm độc hại, lừa đảo hoặc nội dung NSFW.\n" +
+            "**2️⃣ Không tự quảng cáo ngoài các kênh dành riêng:** Chỉ quảng cáo ở nơi được phép.\n" +
+            "**3️⃣ Không chia sẻ liên kết rút gọn, IP grabber hoặc theo dõi:** Chỉ chia sẻ liên kết an toàn, rõ ràng."
         ),
 
     images: new EmbedBuilder()
         .setColor("#FF00FF")
-        .setTitle("🖼️ Image Rules")
+        .setTitle("🖼️ Quy Tắc Hình Ảnh")
         .setDescription(
-            "**1️⃣ No NSFW or explicit images:** This is a safe space.\n" +
-            "**2️⃣ No graphic violence or gore:** Keep content appropriate.\n" +
-            "**3️⃣ No meme spam:** Keep meme posts reasonable.\n" +
-            "**4️⃣ No offensive or discriminatory images.**"
+            "**1️⃣ Cấm hình ảnh NSFW hoặc khiêu dâm:** Đây là môi trường an toàn.\n" +
+            "**2️⃣ Cấm hình ảnh bạo lực hoặc máu me:** Giữ nội dung phù hợp.\n" +
+            "**3️⃣ Không spam meme:** Chia sẻ meme một cách vừa phải.\n" +
+            "**4️⃣ Cấm hình ảnh xúc phạm hoặc phân biệt đối xử.**"
         ),
 
     hacking: new EmbedBuilder()
         .setColor("#FF0000")
-        .setTitle("🛑 Hacking Rules")
+        .setTitle("🛑 Quy Tắc Hack")
         .setDescription(
-            "**1️⃣ No hacking, cheating, or exploiting:** Do not attempt to hack bots, servers, or users.\n" +
-            "**2️⃣ No sharing exploits or scripts:** Unauthorized software is forbidden.\n" +
-            "**3️⃣ No social engineering or phishing:** Do not trick users into revealing sensitive information.\n" +
-            "**4️⃣ No use of alt accounts to bypass bans or restrictions.**"
+            "**1️⃣ Không hack, gian lận hoặc khai thác lỗi:** Không được hack bot, máy chủ hoặc người dùng.\n" +
+            "**2️⃣ Không chia sẻ lỗ hổng hoặc phần mềm không hợp lệ:** Cấm chia sẻ phần mềm trái phép.\n" +
+            "**3️⃣ Không lừa đảo xã hội hoặc giả danh:** Cấm lừa người khác để lấy thông tin.\n" +
+            "**4️⃣ Không dùng tài khoản phụ để né lệnh cấm hoặc giới hạn.**"
         ),
 
     mic_spam: new EmbedBuilder()
         .setColor("#FFA500")
-        .setTitle("🎤 Mic Spam Rules")
+        .setTitle("🎤 Quy Tắc Spam Mic")
         .setDescription(
-            "**1️⃣ No loud, distorted, or annoying sounds:** Do not intentionally disrupt voice chats.\n" +
-            "**2️⃣ No voice changers or soundboards:** Unless allowed in specific channels.\n" +
-            "**3️⃣ No playing music through your mic:** Use the designated music bots instead.\n" +
-            "**4️⃣ No screaming or shouting excessively.**"
+            "**1️⃣ Không phát âm thanh lớn, méo tiếng hoặc gây khó chịu:** Không phá hoại voice chat.\n" +
+            "**2️⃣ Không dùng biến đổi giọng nói hoặc soundboard:** Trừ khi được cho phép trong kênh cụ thể.\n" +
+            "**3️⃣ Không phát nhạc qua mic:** Hãy dùng bot nhạc.\n" +
+            "**4️⃣ Không hét to hoặc la hét quá mức.**"
         ),
 
     bot_usage: new EmbedBuilder()
         .setColor("#008000")
-        .setTitle("🤖 Bot Usage Rules")
+        .setTitle("🤖 Quy Tắc Sử Dụng Bot")
         .setDescription(
-            "**1️⃣ Do not abuse bot commands:** Use them responsibly.\n" +
-            "**2️⃣ No spamming bot commands in main channels:** Keep it in bot channels.\n" +
-            "**3️⃣ Do not attempt to hack or exploit bots.**"
+            "**1️⃣ Không lạm dụng lệnh bot:** Hãy sử dụng đúng cách.\n" +
+            "**2️⃣ Không spam lệnh bot trong các kênh chính:** Dùng trong kênh dành cho bot.\n" +
+            "**3️⃣ Không hack hoặc khai thác bot.**"
         ),
 
     trading_selling: new EmbedBuilder()
         .setColor("#8B4513")
-        .setTitle("💰 Trading & Selling Rules")
+        .setTitle("💰 Quy Tắc Giao Dịch & Bán Hàng")
         .setDescription(
-            "**1️⃣ No selling accounts, items, or services:** This is not a marketplace.\n" +
-            "**2️⃣ No trading or gambling activities:** Use trusted platforms instead.\n" +
-            "**3️⃣ No advertising personal businesses without permission.**"
+            "**1️⃣ Cấm bán tài khoản, vật phẩm hoặc dịch vụ:** Đây không phải là chợ.\n" +
+            "**2️⃣ Cấm giao dịch hoặc đánh bạc:** Hãy dùng các nền tảng đáng tin cậy.\n" +
+            "**3️⃣ Cấm quảng bá doanh nghiệp cá nhân nếu không có sự cho phép.**"
         ),
 
     language: new EmbedBuilder()
         .setColor("#4682B4")
-        .setTitle("🗣️ Language Rules")
+        .setTitle("🗣️ Quy Tắc Ngôn Ngữ")
         .setDescription(
-            "**1️⃣ English only in general channels:** Use other channels for different languages.\n" +
-            "**2️⃣ No excessive swearing:** Keep the chat friendly.\n" +
-            "**3️⃣ No slurs, insults, or offensive language.**"
+            "**1️⃣ Chỉ dùng tiếng Việt trong các kênh chung:** Các ngôn ngữ khác có kênh riêng.\n" +
+            "**2️⃣ Không chửi thề quá mức:** Hãy giữ bầu không khí thân thiện.\n" +
+            "**3️⃣ Cấm ngôn từ xúc phạm, miệt thị.**"
         ),
 
     spoilers: new EmbedBuilder()
         .setColor("#A52A2A")
-        .setTitle("🎥 Spoiler Rules")
+        .setTitle("🎥 Quy Tắc Spoiler")
         .setDescription(
-            "**1️⃣ Use spoiler tags for major spoilers:** Example: `||spoiler here||`.\n" +
-            "**2️⃣ No posting spoilers outside designated spoiler channels.**"
+            "**1️⃣ Dùng thẻ spoiler cho nội dung tiết lộ:** Ví dụ: `||spoiler here||`.\n" +
+            "**2️⃣ Không đăng spoiler ngoài các kênh chuyên về spoiler.**"
         ),
 
     self_promotion: new EmbedBuilder()
         .setColor("#9370DB")
-        .setTitle("📢 Self-Promotion Rules")
+        .setTitle("📢 Quy Tắc Tự Quảng Bá")
         .setDescription(
-            "**1️⃣ No self-promotion outside dedicated channels.**\n" +
-            "**2️⃣ No DM advertising:** Do not send unsolicited links to members.\n" +
-            "**3️⃣ No begging for followers, subscribers, or donations.**"
+            "**1️⃣ Không tự quảng bá ngoài các kênh dành riêng.**\n" +
+            "**2️⃣ Cấm quảng cáo qua tin nhắn riêng:** Không gửi link không mong muốn cho người khác.\n" +
+            "**3️⃣ Không xin xỏ theo dõi, đăng ký hay quyên góp.**"
         ),
 
     moderation: new EmbedBuilder()
         .setColor("#228B22")
-        .setTitle("⚖️ Moderation Rules")
+        .setTitle("⚖️ Quy Tắc Quản Trị")
         .setDescription(
-            "**1️⃣ Respect moderators and their decisions.**\n" +
-            "**2️⃣ Do not backseat moderate:** Let staff handle issues.\n" +
-            "**3️⃣ If you have concerns, message staff privately.**"
+            "**1️⃣ Tôn trọng các quản trị viên và quyết định của họ.**\n" +
+            "**2️⃣ Không tự ý can thiệp vào quản trị:** Hãy để staff xử lý vấn đề.\n" +
+            "**3️⃣ Nếu có thắc mắc, hãy nhắn riêng cho staff.**"
         )
 };
 
