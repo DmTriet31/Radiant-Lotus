@@ -136,7 +136,7 @@ const ruleEmbeds = {
 
      Server_Rules : new EmbedBuilder()
         .setColor("#FF0000")
-        .setTitle("<a:rainbowvivi:1310075817606385724> Luật Chung Cho Toàn Bộ Thành Viên <a:rainbowvivi:1310075817606385724>")
+        .setTitle("<a:RL_rainbowchloe:1371961708704301207> Luật Chung Cho Toàn Bộ Thành Viên <a:RL_rainbowchloe:1371961708704301207>")
         .setDescription(
             "<a:RL_pin:1367510433778372668> Để giữ cho nơi đây luôn vui vẻ - tích cực, chúng mình mong các thành viên tuân thủ một vài điều đơn giản sau:\n\n" +
 
