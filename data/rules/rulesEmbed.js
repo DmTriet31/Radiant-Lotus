@@ -99,40 +99,34 @@ const ruleEmbeds = {
             "**3️⃣ Cấm quảng bá doanh nghiệp cá nhân nếu không có sự cho phép.**"
         ),
 
-    Server Rules: new EmbedBuilder()
+    serverRules: new EmbedBuilder()
         .setColor("#FFD700")
         .setTitle("Radiant Lotus")
         .setDescription(
-           ":rainbowvivi: Luật Chung Cho Toàn Bộ Thành Viên :rainbowvivi:" 
-           ":RL_pin: Để giữ cho nơi đây luôn vui vẻ - tích cực, chúng mình mong các thành viên tuân thủ một vài điều đơn giản sau:\n\n" +
-
+            ":rainbowvivi: Luật Chung Cho Toàn Bộ Thành Viên :rainbowvivi:\n\n" +
+            ":RL_pin: Để giữ cho nơi đây luôn vui vẻ - tích cực, chúng mình mong các thành viên tuân thủ một vài điều đơn giản sau:\n\n" +
             ":RL_arrow~1: Tôn trọng lẫn nhau :handshake_tone1:\n" +
-            ":pinkdot: Không chửi bới, toxic hay công kích cá nhân. Tuyệt đối không phân biệt chủng tộc, tôn giáo, giới tính...\n" +
-
+            ":pinkdot: Không chửi bới, toxic hay công kích cá nhân. Tuyệt đối không phân biệt chủng tộc, tôn giáo, giới tính...\n\n" +
             ":RL_arrow~1: Không gửi nội dung phản cảm :underage:\n" +
             ":pinkdot: Cấm NSFW, bạo lực, nội dung gây khó chịu. Không share link độc hại, giả mạo, scam.\n\n" +
-
             ":RL_arrow~1: Không spam, quảng cáo :no_entry_sign:\n" +
             ":pinkdot: Hạn chế spam emoji, sticker, ảnh meme liên tục - dù vui nhưng cũng có điểm dừng.\n" +
             ":pinkdot: Không quảng cáo server khác hoặc dịch vụ bên ngoài (ib cho owner).\n\n" +
-
             ":RL_arrow~1: Dùng đúng kênh :dividers:\n" +
             ":pinkdot: Mỗi kênh đều có mục đích riêng - đăng đúng nội dung đúng chỗ. Lộn xộn là bị quét liền!!!\n\n" +
-
             ":RL_arrow~1: Không ping staff bừa bãi :bell:\n" +
             ":pinkdot: Chỉ ping khi có vấn đề thật sự.\n" +
-            ":pinkdot: Tránh spam tag hoặc cố ý gây phiền phức.\n\n" +
-
+            ":pinkdot: Tránh spam tag hoặc cố ý gây phiền phức.\n\n"
         ),
 
-    Punishment: new EmbedBuilder()
+    punishment: new EmbedBuilder()
         .setColor("#A52A2A")
         .setTitle("Radiant Lotus")
         .setDescription(
             ":RL_pin: Hình phạt nếu vi phạm tuỳ theo mức độ nặng nhẹ, bạn có thể bị:\n" +
             ":RL_Reddot: Nhắc nhở nhẹ qua DM hoặc kênh riêng.\n" +
             ":RL_Reddot: Mute ( tạm khoá chat 1h ), kick, ban.\n" +
-            ":RL_Reddot: Cấm vĩnh viễn khỏi server nếu tái phạm hoặc vi phạm nghiêm trọng.\n\n" +
+            ":RL_Reddot: Cấm vĩnh viễn khỏi server nếu tái phạm hoặc vi phạm nghiêm trọng.\n"
         ),
 
     moderation: new EmbedBuilder()
@@ -144,15 +138,15 @@ const ruleEmbeds = {
             "**3️⃣ Nếu có thắc mắc, hãy nhắn riêng cho staff.**"
         ),
 
-    Message: new EmbedBuilder()
+    message: new EmbedBuilder()
         .setColor("#9370DB")
         .setTitle("Radiant Lotus")
         .setDescription(
-":RL_rainletter:  Một chút nhắn nhủ :RL_rainletter:"
-"Server không cần bạn phải hoàn hảo - chỉ cần tôn trọng người khác, vui là chính. Tụi mình không cần một cộng đồng quá đông - tụi mình cần một nơi chất lượng, nơi mà ai cũng thoải mái khi trò chuyện, chia sẻ và luôn là chính mình:heartpulse:." 
-
-"Cảm ơn vì bạn đã đọc luật! Chúc bạn có khoảng thời gian vui vẻ tại Radiant Lotus :cherry_blossom:"
-"Nếu có vấn đề gì liên hệ @dmtriet hoặc #🆘〢・ticket "
+            ":RL_rainletter:  Một chút nhắn nhủ :RL_rainletter:\n\n" +
+            "Server không cần bạn phải hoàn hảo - chỉ cần tôn trọng người khác, vui là chính.\n" +
+            "Tụi mình không cần một cộng đồng quá đông - tụi mình cần một nơi chất lượng, nơi mà ai cũng thoải mái khi trò chuyện, chia sẻ và luôn là chính mình :heartpulse:\n\n" +
+            "Cảm ơn vì bạn đã đọc luật! Chúc bạn có khoảng thời gian vui vẻ tại Radiant Lotus :cherry_blossom:\n" +
+            "Nếu có vấn đề gì liên hệ @dmtriet hoặc #🆘〢・ticket"
         )
 };
 
