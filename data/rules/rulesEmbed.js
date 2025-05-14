@@ -99,30 +99,38 @@ const ruleEmbeds = {
             "**3️⃣ Cấm quảng bá doanh nghiệp cá nhân nếu không có sự cho phép.**"
         ),
 
-    rule: new EmbedBuilder()
-        .setColor("#4682B4")
-        .setTitle("🗣️ Quy Tắc Ngôn Ngữ")
+    Server Rules: new EmbedBuilder()
+        .setColor("#FFD700")
         .setDescription(
-            "**1️⃣ Chỉ dùng tiếng Việt trong các kênh chung:** Các ngôn ngữ khác có kênh riêng.\n" +
-            "**2️⃣ Không chửi thề quá mức:** Hãy giữ bầu không khí thân thiện.\n" +
-            "**3️⃣ Cấm ngôn từ xúc phạm, miệt thị.**"
+           ":rainbowvivi: Luật Chung Cho Toàn Bộ Thành Viên :rainbowvivi:" 
+           ":RL_pin: Để giữ cho nơi đây luôn vui vẻ - tích cực, chúng mình mong các thành viên tuân thủ một vài điều đơn giản sau:\n\n" +
+
+            ":RL_arrow~1: Tôn trọng lẫn nhau :handshake_tone1:\n" +
+            ":pinkdot: Không chửi bới, toxic hay công kích cá nhân. Tuyệt đối không phân biệt chủng tộc, tôn giáo, giới tính...\n" +
+
+            ":RL_arrow~1: Không gửi nội dung phản cảm :underage:\n" +
+            ":pinkdot: Cấm NSFW, bạo lực, nội dung gây khó chịu. Không share link độc hại, giả mạo, scam.\n\n" +
+
+            ":RL_arrow~1: Không spam, quảng cáo :no_entry_sign:\n" +
+            ":pinkdot: Hạn chế spam emoji, sticker, ảnh meme liên tục - dù vui nhưng cũng có điểm dừng.\n" +
+            ":pinkdot: Không quảng cáo server khác hoặc dịch vụ bên ngoài (ib cho owner).\n\n" +
+
+            ":RL_arrow~1: Dùng đúng kênh :dividers:\n" +
+            ":pinkdot: Mỗi kênh đều có mục đích riêng - đăng đúng nội dung đúng chỗ. Lộn xộn là bị quét liền!!!\n\n" +
+
+            ":RL_arrow~1: Không ping staff bừa bãi :bell:\n" +
+            ":pinkdot: Chỉ ping khi có vấn đề thật sự.\n" +
+            ":pinkdot: Tránh spam tag hoặc cố ý gây phiền phức.\n\n" +
+
         ),
 
-    spoilers: new EmbedBuilder()
+    Punishment: new EmbedBuilder()
         .setColor("#A52A2A")
-        .setTitle("🎥 Quy Tắc Spoiler")
         .setDescription(
-            "**1️⃣ Dùng thẻ spoiler cho nội dung tiết lộ:** Ví dụ: `||spoiler here||`.\n" +
-            "**2️⃣ Không đăng spoiler ngoài các kênh chuyên về spoiler.**"
-        ),
-
-    self_promotion: new EmbedBuilder()
-        .setColor("#9370DB")
-        .setTitle("📢 Quy Tắc Tự Quảng Bá")
-        .setDescription(
-            "**1️⃣ Không tự quảng bá ngoài các kênh dành riêng.**\n" +
-            "**2️⃣ Cấm quảng cáo qua tin nhắn riêng:** Không gửi link không mong muốn cho người khác.\n" +
-            "**3️⃣ Không xin xỏ theo dõi, đăng ký hay quyên góp.**"
+            ":RL_pin: Hình phạt nếu vi phạm tuỳ theo mức độ nặng nhẹ, bạn có thể bị:\n" +
+            ":RL_Reddot: Nhắc nhở nhẹ qua DM hoặc kênh riêng.\n" +
+            ":RL_Reddot: Mute ( tạm khoá chat 1h ), kick, ban.\n" +
+            ":RL_Reddot: Cấm vĩnh viễn khỏi server nếu tái phạm hoặc vi phạm nghiêm trọng.\n\n" +
         ),
 
     moderation: new EmbedBuilder()
@@ -132,6 +140,16 @@ const ruleEmbeds = {
             "**1️⃣ Tôn trọng các quản trị viên và quyết định của họ.**\n" +
             "**2️⃣ Không tự ý can thiệp vào quản trị:** Hãy để staff xử lý vấn đề.\n" +
             "**3️⃣ Nếu có thắc mắc, hãy nhắn riêng cho staff.**"
+        ),
+
+    Message: new EmbedBuilder()
+        .setColor("#9370DB")
+        .setDescription(
+":RL_rainletter:  Một chút nhắn nhủ :RL_rainletter:"
+"Server không cần bạn phải hoàn hảo - chỉ cần tôn trọng người khác, vui là chính. Tụi mình không cần một cộng đồng quá đông - tụi mình cần một nơi chất lượng, nơi mà ai cũng thoải mái khi trò chuyện, chia sẻ và luôn là chính mình:heartpulse:." 
+
+"Cảm ơn vì bạn đã đọc luật! Chúc bạn có khoảng thời gian vui vẻ tại Radiant Lotus :cherry_blossom:"
+"Nếu có vấn đề gì liên hệ @dmtriet hoặc #🆘〢・ticket "
         )
 };
 
