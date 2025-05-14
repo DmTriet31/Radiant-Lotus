@@ -101,6 +101,7 @@ const ruleEmbeds = {
 
     Server Rules: new EmbedBuilder()
         .setColor("#FFD700")
+        .setTitle("Radiant Lotus")
         .setDescription(
            ":rainbowvivi: Luật Chung Cho Toàn Bộ Thành Viên :rainbowvivi:" 
            ":RL_pin: Để giữ cho nơi đây luôn vui vẻ - tích cực, chúng mình mong các thành viên tuân thủ một vài điều đơn giản sau:\n\n" +
@@ -126,6 +127,7 @@ const ruleEmbeds = {
 
     Punishment: new EmbedBuilder()
         .setColor("#A52A2A")
+        .setTitle("Radiant Lotus")
         .setDescription(
             ":RL_pin: Hình phạt nếu vi phạm tuỳ theo mức độ nặng nhẹ, bạn có thể bị:\n" +
             ":RL_Reddot: Nhắc nhở nhẹ qua DM hoặc kênh riêng.\n" +
@@ -144,6 +146,7 @@ const ruleEmbeds = {
 
     Message: new EmbedBuilder()
         .setColor("#9370DB")
+        .setTitle("Radiant Lotus")
         .setDescription(
 ":RL_rainletter:  Một chút nhắn nhủ :RL_rainletter:"
 "Server không cần bạn phải hoàn hảo - chỉ cần tôn trọng người khác, vui là chính. Tụi mình không cần một cộng đồng quá đông - tụi mình cần một nơi chất lượng, nơi mà ai cũng thoải mái khi trò chuyện, chia sẻ và luôn là chính mình:heartpulse:." 
