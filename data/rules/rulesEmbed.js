@@ -3,135 +3,135 @@ const { EmbedBuilder } = require("discord.js");
 const ruleEmbeds = {
     spam: new EmbedBuilder()
         .setColor("Red")
-        .setTitle("<a:RL_pin:1367510433778372668> 🚫 Luật Spam")
+        .setTitle("<a:RL_pin:1367510433778372668> Luật Spam")
         .setDescription(
-            "<:RL_pinkdot:1371961586608111876> **1️⃣ Không gửi quá nhiều tin nhắn liên tục:** Tránh spam quá mức trong thời gian ngắn.\n" +
-            "<:RL_pinkdot:1371961586608111876> **2️⃣ Không spam emoji:** Đừng làm loạn kênh với emoji hay sticker.\n" +
-            "<:RL_pinkdot:1371961586608111876> **3️⃣ Không spam phản ứng:** Việc thêm/xoá phản ứng liên tục gây phiền.\n" +
-            "<:RL_pinkdot:1371961586608111876> **4️⃣ Không copy-pasta:** Các đoạn văn dài, lặp lại sẽ bị xoá.\n" +
-            "<:RL_pinkdot:1371961586608111876> **5️⃣ Không spam tự quảng cáo:** Quảng bá nội dung cá nhân quá mức là cấm."
+            "<:RL_pinkdot:1371961586608111876> Không gửi quá nhiều tin nhắn liên tục.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không spam emoji hoặc sticker.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không spam phản ứng.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không copy-pasta.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không spam quảng cáo cá nhân."
         ),
 
     nsfw: new EmbedBuilder()
         .setColor("DarkPurple")
-        .setTitle("<a:62802:1210522480901496863> 🔞 Luật Nội Dung Nhạy Cảm (NSFW)")
+        .setTitle("<a:RL_Reddot:1367541939662225409> Luật Nội Dung Nhạy Cảm (NSFW)")
         .setDescription(
-            "<:RL_pinkdot:1371961586608111876> **1️⃣ Cấm hoàn toàn nội dung NSFW:** Bao gồm ảnh, văn bản, hoặc đường link.\n" +
-            "<:RL_pinkdot:1371961586608111876> **2️⃣ Không đùa giỡn hoặc thảo luận thiếu lành mạnh:** Hãy giữ nội dung trong sáng.\n" +
-            "<:RL_pinkdot:1371961586608111876> **3️⃣ Cấm quấy rối tình dục:** Mọi hành vi khiếm nhã đều bị nghiêm cấm.\n" +
-            "<:RL_pinkdot:1371961586608111876> **4️⃣ Không roleplay 18+:** Đây không phải là server dành cho người lớn."
+            "<:RL_pinkdot:1371961586608111876> Cấm hoàn toàn nội dung NSFW (ảnh, text, link).\n" +
+            "<:RL_pinkdot:1371961586608111876> Không đùa giỡn hoặc thảo luận thiếu lành mạnh.\n" +
+            "<:RL_pinkdot:1371961586608111876> Cấm quấy rối tình dục.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không roleplay 18+."
         ),
 
     discord_terms: new EmbedBuilder()
         .setColor("Blue")
-        .setTitle("<a:RL_GREENDOT:1367541794392506430> 📜 Điều Khoản & Chính Sách Discord")
+        .setTitle("<a:RL_GREENDOT:1367541794392506430> Discord Terms & Conditions")
         .setDescription(
-            "**1️⃣ Tuân thủ [Điều Khoản Dịch Vụ của Discord](https://discord.com/terms)**.\n" +
-            "**2️⃣ Tuân thủ [Hướng Dẫn Cộng Đồng Discord](https://discord.com/guidelines)**.\n" +
-            "**3️⃣ Không sử dụng bot, hack, hay exploit trái phép.**\n" +
-            "**4️⃣ Không lừa đảo, scam hoặc câu thông tin.**"
+            "<:RL_pinkdot:1371961586608111876> Tuân thủ [Điều Khoản Dịch Vụ](https://discord.com/terms).\n" +
+            "<:RL_pinkdot:1371961586608111876> Tuân thủ [Hướng Dẫn Cộng Đồng](https://discord.com/guidelines).\n" +
+            "<:RL_pinkdot:1371961586608111876> Không dùng bot, hack, hoặc exploit trái phép.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không lừa đảo, scam, phishing."
         ),
 
     harassment: new EmbedBuilder()
         .setColor("Orange")
-        .setTitle("<a:RL_Reddot:1367541939662225409> 🚷 Luật Chống Quấy Rối")
+        .setTitle("<a:RL_Reddot:1367541939662225409> Luật Chống Quấy Rối")
         .setDescription(
-            "<:RL_pinkdot:1371961586608111876> **1️⃣ Không công kích cá nhân.**\n" +
-            "<:RL_pinkdot:1371961586608111876> **2️⃣ Không phát ngôn thù ghét.**\n" +
-            "<:RL_pinkdot:1371961586608111876> **3️⃣ Không đe doạ hay tiết lộ thông tin cá nhân.**\n" +
-            "<:RL_pinkdot:1371961586608111876> **4️⃣ Không troll quá mức.**"
+            "<:RL_pinkdot:1371961586608111876> Không công kích cá nhân.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không phát ngôn thù ghét.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không đe doạ hoặc tiết lộ thông tin.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không troll quá mức."
         ),
 
     links: new EmbedBuilder()
         .setColor("Yellow")
-        .setTitle("<a:RL_arrow:1371961649690447892> 🔗 Luật Về Đường Dẫn")
+        .setTitle("<a:RL_arrow:1371961649690447892> Luật Về Đường Dẫn")
         .setDescription(
-            "**1️⃣ Không đăng link độc hại.**\n" +
-            "**2️⃣ Không tự quảng cáo ngoài các kênh cho phép.**\n" +
-            "**3️⃣ Không dùng link rút gọn hoặc IP grabber.**"
+            "<:RL_pinkdot:1371961586608111876> Không đăng link độc hại.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không quảng cáo ngoài kênh cho phép.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không dùng link rút gọn hoặc IP grabber."
         ),
 
     images: new EmbedBuilder()
         .setColor("#FF00FF")
-        .setTitle("<a:RL_rainbowchloe:1371961708704301207> 🖼️ Luật Về Hình Ảnh")
+        .setTitle("<a:RL_rainbowchloe:1371961708704301207> Luật Về Hình Ảnh")
         .setDescription(
-            "**1️⃣ Cấm hình NSFW hoặc phản cảm.**\n" +
-            "**2️⃣ Cấm ảnh bạo lực, máu me.**\n" +
-            "**3️⃣ Không spam meme.**\n" +
-            "**4️⃣ Không đăng ảnh xúc phạm hoặc phân biệt.**"
+            "<:RL_pinkdot:1371961586608111876> Cấm hình ảnh NSFW hoặc phản cảm.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không chia sẻ ảnh bạo lực, máu me.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không spam meme.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không đăng ảnh phân biệt đối xử."
         ),
 
     hacking: new EmbedBuilder()
         .setColor("#FF0000")
-        .setTitle("<a:RL_77:1367510222603554827> 🛑 Luật Chống Hack/Exploit")
+        .setTitle("<a:RL_77:1367510222603554827> Luật Hacking")
         .setDescription(
-            "**1️⃣ Cấm hack, cheat hoặc exploit.**\n" +
-            "**2️⃣ Không chia sẻ phần mềm trái phép.**\n" +
-            "**3️⃣ Cấm lừa đảo kiểu social engineering.**\n" +
-            "**4️⃣ Cấm dùng tài khoản phụ để vượt phạt.**"
+            "<:RL_pinkdot:1371961586608111876> Cấm hack, cheat hoặc exploit.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không chia sẻ phần mềm trái phép.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không lừa đảo social engineering.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không dùng tài khoản phụ để tránh bị phạt."
         ),
 
     mic_spam: new EmbedBuilder()
         .setColor("#FFA500")
-        .setTitle("🎤 Luật Về Voice/Mic <a:RL_pin:1367510433778372668>")
+        .setTitle("<a:62802:1210522480901496863> Luật Voice Chat / Mic")
         .setDescription(
-            "**1️⃣ Không phát âm thanh lớn, méo hoặc khó chịu.**\n" +
-            "**2️⃣ Không dùng voice changer nếu chưa được cho phép.**\n" +
-            "**3️⃣ Không mở nhạc qua mic.**\n" +
-            "**4️⃣ Không hét hoặc la quá mức.**"
+            "<:RL_pinkdot:1371961586608111876> Không phát âm thanh to hoặc méo tiếng.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không dùng voice changer nếu không được phép.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không mở nhạc qua mic.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không hét hoặc gây ồn ào quá mức."
         ),
 
     bot_usage: new EmbedBuilder()
         .setColor("#008000")
-        .setTitle("<a:RL_staff:1367510478288322710> 🤖 Luật Sử Dụng Bot")
+        .setTitle("<a:RL_staff:1367510478288322710> Luật Sử Dụng Bot")
         .setDescription(
-            "**1️⃣ Không lạm dụng lệnh bot.**\n" +
-            "**2️⃣ Không spam lệnh bot ở kênh chính.**\n" +
-            "**3️⃣ Không tìm cách phá hoại bot.**"
+            "<:RL_pinkdot:1371961586608111876> Không spam hoặc lạm dụng bot.\n" +
+            "<:RL_pinkdot:1371961586608111876> Dùng bot đúng kênh.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không tìm cách phá bot."
         ),
 
     trading_selling: new EmbedBuilder()
         .setColor("#8B4513")
-        .setTitle("💰 Luật Mua Bán & Giao Dịch <a:RL_arrow:1371961649690447892>")
+        .setTitle("<a:RL_arrow:1371961649690447892> Luật Mua Bán / Giao Dịch")
         .setDescription(
-            "**1️⃣ Không mua bán tài khoản, vật phẩm.**\n" +
-            "**2️⃣ Không giao dịch hoặc cá cược.**\n" +
-            "**3️⃣ Không quảng bá dịch vụ cá nhân trái phép.**"
+            "<:RL_pinkdot:1371961586608111876> Không buôn bán tài khoản, item, dịch vụ.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không cá cược hoặc giao dịch rủi ro.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không quảng bá dịch vụ cá nhân trái phép."
         ),
 
     language: new EmbedBuilder()
         .setColor("#4682B4")
-        .setTitle("🗣️ Luật Ngôn Ngữ <a:RL_rainletter:1371820268552589437>")
+        .setTitle("<a:RL_rainletter:1371820268552589437> Luật Ngôn Ngữ")
         .setDescription(
-            "**1️⃣ Dùng tiếng Anh ở kênh chung.**\n" +
-            "**2️⃣ Không chửi tục quá mức.**\n" +
-            "**3️⃣ Không dùng từ xúc phạm.**"
+            "<:RL_pinkdot:1371961586608111876> Chỉ dùng tiếng Anh ở kênh chung.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không chửi tục quá nhiều.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không dùng từ xúc phạm hay phân biệt."
         ),
 
     spoilers: new EmbedBuilder()
         .setColor("#A52A2A")
-        .setTitle("🎥 Luật Spoiler <a:RL_Reddot:1367541939662225409>")
+        .setTitle("<a:RL_Reddot:1367541939662225409> Luật Spoiler")
         .setDescription(
-            "**1️⃣ Dùng spoiler tag cho nội dung tiết lộ.**\n" +
-            "**2️⃣ Không spoil ở kênh không cho phép.**"
+            "<:RL_pinkdot:1371961586608111876> Dùng `||spoiler||` cho nội dung tiết lộ.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không spoil ở kênh không cho phép."
         ),
 
     self_promotion: new EmbedBuilder()
         .setColor("#9370DB")
-        .setTitle("📢 Luật Tự Quảng Cáo <a:RL_arrow:1371961649690447892>")
+        .setTitle("<a:RL_arrow:1371961649690447892> Luật Tự Quảng Cáo")
         .setDescription(
-            "**1️⃣ Không tự quảng cáo ngoài khu vực được phép.**\n" +
-            "**2️⃣ Không gửi quảng cáo qua DM.**\n" +
-            "**3️⃣ Không xin xỏ follow, sub, donate.**"
+            "<:RL_pinkdot:1371961586608111876> Không quảng cáo ngoài khu vực cho phép.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không quảng cáo qua tin nhắn riêng (DM).\n" +
+            "<:RL_pinkdot:1371961586608111876> Không xin donate, follow hoặc subs."
         ),
 
     moderation: new EmbedBuilder()
         .setColor("#228B22")
-        .setTitle("⚖️ Luật Về Quản Trị <a:RL_staff:1367510478288322710>")
+        .setTitle("<a:RL_staff:1367510478288322710> Luật Quản Trị")
         .setDescription(
-            "**1️⃣ Tôn trọng quyết định của staff.**\n" +
-            "**2️⃣ Không làm quản trị viên tự phong.**\n" +
-            "**3️⃣ Có gì cần góp ý hãy nhắn riêng cho staff.**"
+            "<:RL_pinkdot:1371961586608111876> Tôn trọng quyết định của quản trị viên.\n" +
+            "<:RL_pinkdot:1371961586608111876> Không tự ý can thiệp khi staff đang xử lý.\n" +
+            "<:RL_pinkdot:1371961586608111876> Góp ý nên nhắn riêng cho staff."
         )
 };
 
