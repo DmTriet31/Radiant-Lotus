@@ -99,7 +99,7 @@ const ruleEmbeds = {
             "**3️⃣ Cấm quảng bá doanh nghiệp cá nhân nếu không có sự cho phép.**"
         ),
 
-    language: new EmbedBuilder()
+    rule: new EmbedBuilder()
         .setColor("#4682B4")
         .setTitle("🗣️ Quy Tắc Ngôn Ngữ")
         .setDescription(
