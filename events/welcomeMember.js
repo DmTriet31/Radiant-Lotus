@@ -13,8 +13,7 @@ module.exports = (client) => {
       .setDescription(
         `Chúc bạn có những khoảng khắc vui vẻ và gắn kết với mọi người khi tham gia server, đừng ngần ngại trò chuyện và kết bạn với các thành viên khác nhé.\n\n` +
         `Hãy thoải mái tham gia các cuộc trò chuyện, đóng góp ý tưởng và cùng nhau xây dựng 1 cộng đồng vui vẻ và đoàn kết. ` +
-        `Hi vọng bạn có những khoảng khắc tuyệt vời tại server!\n\n` +
-        `Để tham gia server, bấm vào [**link này**](https://discord.gg/ssh2hgpadH) để tham gia nhé!`
+        `Hi vọng bạn có những khoảng khắc tuyệt vời tại server!`
       )
       .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
       .setFooter({
@@ -28,11 +27,6 @@ module.exports = (client) => {
         .setStyle(ButtonStyle.Link)
         .setURL('https://discord.com/channels/1367120428648108042/1367120774300700763') // Link mời của server
         .setEmoji('<a:62802:1210522480901496863>'),
-
-      new ButtonBuilder()
-        .setCustomId('reaction-emoji')
-        .setStyle(ButtonStyle.Secondary)
-        .setEmoji('<a:62802:1210522480901496863>')
     );
 
     await channel.send({
