@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require("discord.js");
+const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 
 const ruleEmbeds = {
     spam: new EmbedBuilder()
@@ -168,7 +168,21 @@ const ruleEmbeds = {
 
             "Cảm ơn vì bạn đã đọc luật! Chúc bạn có khoảng thời gian vui vẻ tại **Radiant Lotus** 🌸\n" +
             "Nếu có vấn đề gì liên hệ <@853261151365627915> hoặc <#1367120849785716786>"
+        ),
+
+    components: [
+        new ActionRowBuilder().addComponents(
+            new ButtonBuilder()
+                .setLabel("Discord Link")
+                .setStyle(ButtonStyle.Link)
+                .setURL("https://discord.gg/ssh2hgpadH"),
+
+            new ButtonBuilder()
+                .setEmoji("<a:RL_VIETNAM:1367509474348367923>")
+                .setStyle(ButtonStyle.Link)
+                .setURL("https://discord.gg/ssh2hgpadH")
         )
+    ]
 };
 
 module.exports = ruleEmbeds;
