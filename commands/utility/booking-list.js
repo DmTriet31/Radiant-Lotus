@@ -14,49 +14,51 @@ module.exports = {
           { name: 'Talkshow', value: 'talkshow' },
           { name: 'Gamenight', value: 'gamenight' }
         )),
-  
+
   async execute(interaction) {
     const event = interaction.options.getString('sự_kiện');
-    const data = JSON.parse(fs.readFileSync('bookings.json', 'utf8') || '{}');
+    let data = {};
+    try {
+      data = JSON.parse(fs.readFileSync('bookings.json', 'utf8'));
+    } catch (e) {
+      data = {};
+    }
+
     const bookings = data[event] || [];
 
     if (bookings.length === 0) {
-      return interaction.reply({ content: `Hiện chưa có ai đăng ký sự kiện ${event}.`, ephemeral: true });
+      return interaction.reply(`Hiện chưa có ai đăng ký sự kiện **${event}**.`);
     }
 
-    // Phân loại booking: đơn thuần và có tag người muốn book cùng
-    const soloBookings = bookings.filter(b => !b.targetUserId);
-    const pairedBookings = bookings.filter(b => b.targetUserId);
+    const solo = bookings.filter(b => !b.targetUserId);
+    const paired = bookings.filter(b => b.targetUserId);
 
-    // Tạo nội dung reply
-    let reply = `**Danh sách đăng ký sự kiện ${event}:**\n\n`;
+    let reply = `**Danh sách sự kiện ${event}:**\n\n`;
 
-    if (soloBookings.length) {
+    if (solo.length) {
       reply += '**Tham gia đơn thuần:**\n';
-      for (const b of soloBookings) {
-        const user = await interaction.client.users.fetch(b.userId).catch(() => ({ username: 'Unknown' }));
+      for (const b of solo) {
+        const user = await interaction.client.users.fetch(b.userId).catch(() => ({ username: 'Không rõ' }));
         reply += `- ${user.username}`;
-        if (event === 'karaoke' && b.song) {
-          reply += ` | Bài hát: ${b.song}`;
-        }
-        reply += '\n';
+        if (event === 'karaoke' && b.song) reply += ` | Bài hát: ${b.song}`;
+        reply += `\n`;
       }
       reply += '\n';
     } else {
-      reply += '_Chưa có ai đăng ký tham gia đơn thuần._\n\n';
+      reply += '_Không có ai tham gia đơn thuần._\n\n';
     }
 
-    if (pairedBookings.length) {
-      reply += '**Mong muốn chơi/talk/hát cùng:**\n';
-      for (const b of pairedBookings) {
-        const user = await interaction.client.users.fetch(b.userId).catch(() => ({ username: 'Unknown' }));
-        const targetUser = await interaction.client.users.fetch(b.targetUserId).catch(() => ({ username: 'Unknown' }));
-        reply += `- ${user.username} muốn cùng ${targetUser.username} (${b.purpose || 'Không có ghi chú'})\n`;
+    if (paired.length) {
+      reply += '**Mong muốn chơi cùng:**\n';
+      for (const b of paired) {
+        const user = await interaction.client.users.fetch(b.userId).catch(() => ({ username: 'Không rõ' }));
+        const target = await interaction.client.users.fetch(b.targetUserId).catch(() => ({ username: 'Không rõ' }));
+        reply += `- ${user.username} → ${target.username} (${b.purpose})\n`;
       }
     } else {
-      reply += '_Chưa có ai đặt mong muốn chơi cùng người khác._\n';
+      reply += '_Không có ai mong muốn chơi cùng._';
     }
 
-    return interaction.reply({ content: reply, ephemeral: false });
+    return interaction.reply(reply);
   }
 };
