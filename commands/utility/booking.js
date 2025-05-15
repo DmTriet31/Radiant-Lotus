@@ -35,7 +35,12 @@ module.exports = {
     const user = interaction.user;
 
     // Đọc dữ liệu từ file hoặc tạo mới
-    const data = JSON.parse(fs.readFileSync('bookings.json', 'utf8') || '{}');
+    let data = {};
+    try {
+      data = JSON.parse(fs.readFileSync('bookings.json', 'utf8'));
+    } catch (e) {
+      data = {};
+    }
     if (!data[event]) data[event] = [];
 
     // Nếu là đăng ký đơn thuần (không tag người)
@@ -56,19 +61,18 @@ module.exports = {
     }
 
     // Nếu có tag người muốn book cùng (mong muốn chơi/talk/hát cùng)
-    else {
-      // Kiểm tra trùng lặp booking kiểu này
-      if (data[event].some(e => e.userId === user.id && e.targetUserId === targetUser.id)) {
-        return interaction.reply({ content: `Bạn đã đăng ký mong muốn chơi/talk/hát cùng ${targetUser.username} trong sự kiện này rồi.`, ephemeral: true });
-      }
-      data[event].push({
-        userId: user.id,
-        targetUserId: targetUser.id,
-        purpose,
-        timestamp: Date.now(),
-      });
-      fs.writeFileSync('bookings.json', JSON.stringify(data, null, 2));
-      return interaction.reply({ content: `Đã ghi nhận mong muốn chơi/talk/hát cùng ${targetUser.username} trong sự kiện ${event}.`, ephemeral: true });
+    if (data[event].some(e => e.userId === user.id && e.targetUserId === targetUser.id)) {
+      return interaction.reply({ content: `Bạn đã đăng ký mong muốn chơi/talk/hát cùng ${targetUser.username} rồi.`, ephemeral: true });
     }
+
+    data[event].push({
+      userId: user.id,
+      targetUserId: targetUser.id,
+      purpose,
+      timestamp: Date.now(),
+    });
+
+    fs.writeFileSync('bookings.json', JSON.stringify(data, null, 2));
+    return interaction.reply({ content: `Đã ghi nhận mong muốn chơi/talk/hát cùng ${targetUser.username} trong sự kiện ${event}.`, ephemeral: true });
   }
 };
