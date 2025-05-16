@@ -30,13 +30,13 @@ module.exports = {
         const content = message.content.toLowerCase().trim(); 
 
 // === auto react Locket ảnh/video trong kênh media ===
-const mediaChannelId = '1367995671424270357'; // Kênh chứa ảnh/video chung
+const mediaChannelId = '1367995671424270357';
 if (channelId === mediaChannelId) {
     const hasImage = message.attachments.some(att => att.contentType?.startsWith('image/'));
     const hasVideo = message.attachments.some(att => att.contentType?.startsWith('video/'));
 
     if (hasImage || hasVideo) {
-        const mediaEmojis = ['❤️', '👍', '🔥'];
+        const mediaEmojis = ['<a:locketLove:1210522480901496863>', '<:thumbsUp:1210522500000000000>', '<a:fireSpin:1210522510000000000>'];
         try {
             for (const emoji of mediaEmojis) {
                 await message.react(emoji);
