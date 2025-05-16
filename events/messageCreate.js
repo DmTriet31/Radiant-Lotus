@@ -36,7 +36,7 @@ if (channelId === mediaChannelId) {
     const hasVideo = message.attachments.some(att => att.contentType?.startsWith('video/'));
 
     if (hasImage || hasVideo) {
-        const mediaEmojis = ['❤️', '👍', '🔥'];
+        const mediaEmojis = ['<a:62802:1210522480901496863>', '👍', '🔥'];
         try {
             for (const emoji of mediaEmojis) {
                 await message.react(emoji);
@@ -75,7 +75,7 @@ if (channelId === selfieChannelId) {
     const isSelfie = message.attachments.some(att => att.contentType?.startsWith('image/'));
 
     if (isSelfie) {
-        const selfieEmojis = ['❤️', '😍', '🔥'];
+        const selfieEmojis = ['<a:62802:1210522480901496863>', '😍', '🔥'];
         try {
             for (const emoji of selfieEmojis) {
                 await message.react(emoji);
