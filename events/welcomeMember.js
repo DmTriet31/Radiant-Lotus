@@ -1,4 +1,10 @@
-const { Events, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+const {
+  Events,
+  EmbedBuilder,
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle
+} = require('discord.js');
 
 module.exports = (client) => {
   client.on(Events.GuildMemberAdd, async member => {
@@ -25,8 +31,12 @@ module.exports = (client) => {
       new ButtonBuilder()
         .setLabel('.gg/ssh2hgpadH')
         .setStyle(ButtonStyle.Link)
-        .setURL('https://discord.com/channels/1367120428648108042/1367120774300700763') // Link mời của server
+        .setURL('https://discord.com/channels/1367120428648108042/1367120774300700763')
         .setEmoji('<a:62802:1210522480901496863>'),
+      new ButtonBuilder()
+        .setCustomId(`welcome_greet_${member.id}`)
+        .setLabel('👋 Chào mừng bạn mới!')
+        .setStyle(ButtonStyle.Primary)
     );
 
     await channel.send({
