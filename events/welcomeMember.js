@@ -1,10 +1,4 @@
-const {
-  Events,
-  EmbedBuilder,
-  ActionRowBuilder,
-  ButtonBuilder,
-  ButtonStyle
-} = require('discord.js');
+const { Events, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
 module.exports = (client) => {
   client.on(Events.GuildMemberAdd, async member => {
@@ -15,7 +9,7 @@ module.exports = (client) => {
 
     const embed = new EmbedBuilder()
       .setColor(0xff4757)
-      .setTitle('<a:RL_rainbowchloe:1371961708704301207> Welcome To Radiant Lotus <a:RL_rainbowchloe:1371961708704301207>')
+      .setTitle(':RL_rainbowchloe: Welcome To Radiant Lotus :RL_rainbowchloe:')
       .setDescription(
         `Chúc bạn có những khoảng khắc vui vẻ và gắn kết với mọi người khi tham gia server, đừng ngần ngại trò chuyện và kết bạn với các thành viên khác nhé.\n\n` +
         `Hãy thoải mái tham gia các cuộc trò chuyện, đóng góp ý tưởng và cùng nhau xây dựng 1 cộng đồng vui vẻ và đoàn kết. ` +
@@ -31,12 +25,8 @@ module.exports = (client) => {
       new ButtonBuilder()
         .setLabel('.gg/ssh2hgpadH')
         .setStyle(ButtonStyle.Link)
-        .setURL('https://discord.com/channels/1367120428648108042/1367120774300700763')
-        .setEmoji('<a:62802:1210522480901496863>'),
-      new ButtonBuilder()
-        .setCustomId(`welcome_greet_${member.id}`)
-        .setLabel('👋 Chào mừng bạn mới!')
-        .setStyle(ButtonStyle.Primary)
+        .setURL('https://discord.com/channels/1367120428648108042/1367120774300700763') // Link mời của server
+        .setEmoji(':62802:'),
     );
 
     await channel.send({
