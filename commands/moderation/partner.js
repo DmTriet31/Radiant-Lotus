@@ -35,22 +35,30 @@ module.exports = {
         return interaction.reply({ content: '❌ Không tìm thấy kênh gửi partner!', ephemeral: true });
       }
 
-      // Gửi thông báo
+      // Gửi thông báo trong kênh
       await channel.send({ content: messageContent });
 
       // Cấp role cho người đại diện
       const member = await guild.members.fetch(user.id);
       await member.roles.add(partnerRoleId);
 
+      // Gửi DM cho đại diện
+      await user.send(
+        `📩 Partner đã được hoàn tất!\nBạn đã được gán role đối tác tại server **${guild.name}**.\nCảm ơn bạn đã hợp tác cùng chúng tôi!`
+      ).catch(() => {
+        console.log(`❗ Không thể gửi DM cho ${user.tag}.`);
+      });
+
+      // Phản hồi riêng cho người dùng dùng lệnh
       await interaction.reply({
-        content: `✅ Đã cấp role partner cho ${user.tag}!`,
+        content: `✅ Đã cấp role partner cho ${user.tag} và gửi thông báo.`,
         ephemeral: true
       });
 
     } catch (error) {
       console.error('Lỗi khi xử lý partner:', error);
       await interaction.reply({
-        content: '❌ Đã xảy ra lỗi khi gửi partner.',
+        content: '❌ Đã xảy ra lỗi khi xử lý partner.',
         ephemeral: true
       });
     }
