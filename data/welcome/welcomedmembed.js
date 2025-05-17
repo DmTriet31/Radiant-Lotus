@@ -25,7 +25,7 @@ module.exports = {
       await user.send({ embeds: [embed] });
     } catch (error) {
       console.error('Không gửi được DM, thử gửi trong server...');
-      const channel = member.guild.channels.cache.get('ID_KENH_WELCOME'); // thay ID kênh bạn muốn
+      const channel = member.guild.channels.cache.get('1367120768378343424'); // thay ID kênh bạn muốn
       if (channel) channel.send({ content: `🎉 **Chào mừng <@${user.id}>!**`, embeds: [embed] });
     }
   }
