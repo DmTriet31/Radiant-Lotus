@@ -1,7 +1,5 @@
 const {
   SlashCommandBuilder,
-  ButtonBuilder,
-  ActionRowBuilder,
   PermissionFlagsBits
 } = require('discord.js');
 
@@ -24,21 +22,12 @@ module.exports = {
     const link = interaction.options.getString('link');
     const guild = interaction.guild;
 
-    const serverName = user.username; // Lấy tên từ user
     const partnerRoleId = '1367120701869260941'; // ID role partner
     const outputChannelId = '1367120844878254202'; // ID kênh gửi thông báo
 
-    const messageContent = `>>> ✅ **PARTNER MỚI**
+    const messageContent = `>>> 
 <a:RL_77:1367510222603554827> **Người Đại Diện:** <@${user.id}>
-<a:RL_124:1367510341734371411> **Tên Server:** **${serverName}**
-<a:RL_arrow:1367510296020783184> **Link Server:** ${link}`;
-
-    const joinButton = new ButtonBuilder()
-      .setLabel('Tham gia server')
-      .setStyle(5)
-      .setURL(link);
-
-    const actionRow = new ActionRowBuilder().addComponents(joinButton);
+<a:RL_muiten:1371959241430274101> **Link Server:** ${link}`;
 
     try {
       const channel = guild.channels.cache.get(outputChannelId);
@@ -47,17 +36,14 @@ module.exports = {
       }
 
       // Gửi thông báo
-      await channel.send({
-        content: messageContent,
-        components: [actionRow]
-      });
+      await channel.send({ content: messageContent });
 
       // Cấp role cho người đại diện
       const member = await guild.members.fetch(user.id);
       await member.roles.add(partnerRoleId);
 
       await interaction.reply({
-        content: `✅ Đã thêm đối tác **${serverName}** và cấp role cho ${user.tag}!`,
+        content: `✅ Đã cấp role partner cho ${user.tag}!`,
         ephemeral: true
       });
 
