@@ -16,25 +16,6 @@ module.exports = {
         // 🟣 Button Logic for Truth or Dare
         if (interaction.isButton()) {
             const { customId, user } = interaction;
-  if (customId.startsWith('welcome_greet_')) {
-    const memberId = customId.split('_')[2];
-    const greetings = [
-      `🎉 Mừng <@${memberId}> đến với đại gia đình Radiant Lotus!`,
-      `👋 Xin chào <@${memberId}>! Hy vọng bạn sẽ thấy vui vẻ ở đây!`,
-      `💖 Welcome <@${memberId}>! Chúc bạn có thời gian tuyệt vời!`,
-      `🎊 Chào mừng <@${memberId}> đến với cộng đồng của chúng mình!`,
-      `🌸 Heyy <@${memberId}>! Cùng nhau chill nhaaa~`
-    ];
-    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-    await interaction.reply({
-      content: randomGreeting,
-      allowedMentions: { users: [memberId] },
-      ephemeral: false
-    });
-    return;
-  }
-
              // Handle Button Interactions (Verification Button)
    
             if (interaction.customId === 'verify_button') {
