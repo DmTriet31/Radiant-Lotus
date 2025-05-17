@@ -25,8 +25,7 @@ module.exports = {
     const partnerRoleId = '1367120701869260941'; // ID role partner
     const outputChannelId = '1367120844878254202'; // ID kênh gửi thông báo
 
-    const messageContent = `>>> 
-<a:RL_77:1367510222603554827> **Đại Diện:** <@${user.id}>
+    const messageContent = `>>> <a:RL_77:1367510222603554827> **Đại Diện:** <@${user.id}>
 <a:RL_muiten:1371959241430274101> ${link}`;
 
     try {
