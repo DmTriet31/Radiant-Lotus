@@ -35,9 +35,9 @@ module.exports = async function memberLeaveHandler(client) {
             const channel = member.guild.channels.cache.get(leaveSettings.leaveChannelId);
             if (channel) {
                 const embed = new EmbedBuilder()
-                    .setTitle('👋 Member Left')
+                    .setTitle('୨ <:RL_Lounge_bow:1373276638074245190> ୧〃 ➜ *New Leave*')
                     .setColor('#FF9900')
-                    .setDescription(`${member.user.tag} has left the server.`)
+                    .setDescription(`Con Quỷ ${member.user.tag} đã bỏ rơi chúng ta.`)
                     .setThumbnail(member.user.displayAvatarURL())
                     .setTimestamp();
 
