@@ -97,11 +97,11 @@ const sendOrUpdateCentralizedEmbed = async (client, guild) => {
       .addFields([
         {
           name: '🔒 Privacy Controls',
-          value: `> \`🔒\` Lock channel - Prevent others from joining\n> \`🔓\` Unlock channel - Allow others to join\n> \`👻\` Hide channel - Make it invisible to others\n> \`👁️\` Show channel - Make it visible to everyone`
+          value: `> \`🔒\` Khóa kênh - Prevent others from joining\n> \`🔓\` Khóa Kênh - Allow others to join\n> \`👻\` Ẩn Kênh - Make it invisible to others\n> \`👁️\` Hiển Thị Kênh - Make it visible to everyone`
         },
         {
           name: '⚙️ Channel Settings',
-          value: `> \`✏️\` Rename - Change channel name/description\n> \`👑\` Transfer - Give ownership to another user\n> \`🧢\` User Limit - Adjust maximum capacity\n> \`🔊\` Bitrate - Adjust audio quality`
+          value: `> \`✏️\` Đổi Tên - Change channel name/description\n> \`👑\` Chuyển quyền - Give ownership to another user\n> \`🧢\` User Limit - Adjust maximum capacity\n> \`🔊\` Bitrate - Adjust audio quality`
         },
         {
           name: '🛠️ Moderation Tools',
