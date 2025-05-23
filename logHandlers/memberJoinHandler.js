@@ -148,26 +148,37 @@ async function handleWelcomeChannel(member, welcomeSettings) {
         const cardBuffer = await welcomecard.build();
         const attachment = new AttachmentBuilder(cardBuffer, { name: 'welcome.png' });
 
-        const welcomeEmbed = new EmbedBuilder()
-            .setTitle("Welcome!")
-            .setDescription(`${member}, You are the **${memberCount}${suffix}** member of our server!`)
-            .setColor("#00e5ff")
-            .setThumbnail(serverIcon)
-            .setImage('attachment://welcome.png')
-            .addFields(
-                { name: 'Username', value: username, inline: true },
-                { name: 'Join Date', value: joinDate, inline: true },
-                { name: 'Account Created', value: creationDate, inline: true }
-            )
-            .setFooter({ text: "We're glad to have you here!", iconURL: serverIcon })
-            .setAuthor({ name: username, iconURL: user.displayAvatarURL() })
-            .setTimestamp();
+const serverBannerURL = "https://cdn.discordapp.com/attachments/1367522678420013146/1367522834787729548/standard.gif?ex=6814e463&is=681392e3&hm=851175dde7a8e999bfe5a37f0eda1ef9934b76b49e267264c1df6ce6b7d83be6";
 
-        await welcomeChannel.send({
-            content: `Hey ${member}!`,
-            embeds: [welcomeEmbed],
-            files: [attachment]
-        });
+const welcomeEmbed = new EmbedBuilder()
+    .setTitle("୨ <:RL_Lounge_bow:1373276638074245190> ୧〃 ➜ *Thành viên mới*")
+    .setDescription(
+        `╭─────── <:p_heart18:710751780991926273> ────────❥\n` +
+        `*${member}* đã tham gia server! ﹒ ><a:p_flowers01:700919142785744917>\n` +
+        `╭─ Hướng dẫn\n` +
+        `> <a:RL_arrow:1367510296020783184> [Kênh Chat Fa](https://discord.com/channels/1367120428648108042/1367506963696713891)\n` +
+        `> <a:RL_arrow:1367510296020783184> [Tìm Đồng Đội](https://discord.com/channels/1367120428648108042/1367120810170515507)\n` +
+        `> <a:RL_arrow:1367510296020783184> [Chơi Bot](https://discord.com/channels/1367120428648108042/1367120830785519687)\n` +
+        `> <a:RL_arrow:1367510296020783184> [Vào đây để tạo voice chat của bạn](https://discord.com/channels/1367120428648108042/1367120774300700763)\n` +
+        `╰─ ────── <:p_heart18:710751780991926273> ────────❥`
+    )
+    .setColor("#FF1493")
+    .setThumbnail(serverIcon)
+    .setImage(serverBannerURL)
+    .addFields(
+        { name: 'Username', value: username, inline: true },
+        { name: 'Join Date', value: joinDate, inline: true },
+        { name: 'Account Created', value: creationDate, inline: true }
+    )
+    .setFooter({ text: "We're glad to have you here!", iconURL: serverIcon })
+    .setAuthor({ name: username, iconURL: user.displayAvatarURL() })
+    .setTimestamp();
+
+await welcomeChannel.send({
+    content: `Hey ${member}!`,
+    embeds: [welcomeEmbed]
+});
+
 
     } catch (error) {
         console.error('❌ Error in welcome channel handler:', error);
