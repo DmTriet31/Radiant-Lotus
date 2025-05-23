@@ -43,11 +43,14 @@ const loadEventHandlers = () => {
     const voiceChannelHandler = require('./events/voiceChannelHandler');
     voiceChannelHandler(client);
     logSystem('VOICE');
-
+    
     console.log(`\n${colors.magenta}${colors.bright}🎮 ENGAGEMENT SYSTEMS${colors.reset}`);
     console.log('─'.repeat(40));
 
-   
+    const welcomeHandler = require('./events/welcomeMember');
+    welcomeHandler(client);
+    logSystem('WELCOME');
+
     const giveawayHandler = require('./events/giveaway');
     giveawayHandler(client);
     logSystem('GIVEAWAY');
