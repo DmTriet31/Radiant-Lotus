@@ -1,6 +1,6 @@
 const setupBanners = {
-    helpBanner : 'https://i.ibb.co/23C0zG31/standard-1.gif',
-    verificationBanner : 'https://i.ibb.co/pjHDXzXx/static.png',
+    helpBanner : 'https://cdn.discordapp.com/attachments/1367522678420013146/1367522834787729548/standard.gif?ex=6814e463&is=681392e3&hm=851175dde7a8e999bfe5a37f0eda1ef9934b76b49e267264c1df6ce6b7d83be6&',
+    verificationBanner : 'https://cdn.discordapp.com/attachments/1367522678420013146/1367522834787729548/standard.gif?ex=6814e463&is=681392e3&hm=851175dde7a8e999bfe5a37f0eda1ef9934b76b49e267264c1df6ce6b7d83be6&',
     ticketBanner : 'https://i.ibb.co/h1DBsRnv/ticket.gif',
     autovcBanner : 'https://i.ibb.co/mk6Tj1r/autovc.gif',
 };
