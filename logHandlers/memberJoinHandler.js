@@ -152,16 +152,17 @@ const serverBannerURL = "https://cdn.discordapp.com/attachments/1367522678420013
 
 const welcomeEmbed = new EmbedBuilder()
     .setTitle("୨ <:RL_Lounge_bow:1373276638074245190> ୧〃 ➜ *Thành viên mới*")
-    .setDescription(
-        `╭─────── <:p_heart18:710751780991926273> ────────❥\n` +
-        `*${member}* đã tham gia server! ﹒ ><a:p_flowers01:700919142785744917>\n` +
-        `╭─ Hướng dẫn\n` +
-        `> <a:RL_arrow:1367510296020783184> [Kênh Chat Fa](https://discord.com/channels/1367120428648108042/1367506963696713891)\n` +
-        `> <a:RL_arrow:1367510296020783184> [Tìm Đồng Đội](https://discord.com/channels/1367120428648108042/1367120810170515507)\n` +
-        `> <a:RL_arrow:1367510296020783184> [Chơi Bot](https://discord.com/channels/1367120428648108042/1367120830785519687)\n` +
-        `> <a:RL_arrow:1367510296020783184> [Vào đây để tạo voice chat của bạn](https://discord.com/channels/1367120428648108042/1367120774300700763)\n` +
-        `╰─ ────── <:p_heart18:710751780991926273> ────────❥`
-    )
+.setDescription(
+  `╭─────── <a:RL_rainletter:1371820268552589437> ────────❥\n` +
+  `*${member}* đã tham gia server! ﹒ ><a:RL_pinkheart:1373139875943022602>\n\n` +
+  `╭─ Hướng dẫn\n` +
+  `> <a:RL_77:1367510222603554827> [Đọc luật](https://discord.com/channels/1367120428648108042/1367499798068072599) ・ ` +
+  `<a:RL_rainbowchloe:1371961708704301207> [Chat Fa](https://discord.com/channels/1367120428648108042/1367506963696713891) ・ ` +
+  `<a:RL_rainbowangie:1373277464188424260> [Tìm đội](https://discord.com/channels/1367120428648108042/1367120810170515507)\n` +
+  `> <a:RL_bow_purple:1374556202406641744> [Chơi Bot](https://discord.com/channels/1367120428648108042/1367120830785519687) ・ ` +
+  `<a:RL_77:1367510222603554827> [Tạo Voice Chat](https://discord.com/channels/1367120428648108042/1367120774300700763)\n` +
+  `╰─ ────── <a:RL_rainletter:1371820268552589437> ────────❥`
+)
     .setColor("#FF1493")
     .setThumbnail(serverIcon)
     .setImage(serverBannerURL)
