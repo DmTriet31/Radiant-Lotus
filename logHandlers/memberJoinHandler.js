@@ -176,7 +176,6 @@ const welcomeEmbed = new EmbedBuilder()
     .setTimestamp();
 
 await welcomeChannel.send({
-    content: `Hey ${member}!`,
     embeds: [welcomeEmbed]
 });
 
