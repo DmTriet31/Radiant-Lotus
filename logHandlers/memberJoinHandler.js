@@ -172,7 +172,6 @@ const welcomeEmbed = new EmbedBuilder()
         { name: 'Account Created', value: creationDate, inline: true }
     )
     .setFooter({ text: "We're glad to have you here!", iconURL: serverIcon })
-    .setAuthor({ name: username, iconURL: user.displayAvatarURL() })
     .setTimestamp();
 
 await welcomeChannel.send({
