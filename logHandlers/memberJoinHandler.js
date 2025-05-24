@@ -163,15 +163,18 @@ const welcomeEmbed = new EmbedBuilder()
   `<a:RL_77:1367510222603554827> [Tạo Voice Chat](https://discord.com/channels/1367120428648108042/1367120774300700763)\n` +
   `╰─ ────── <a:RL_rainletter:1371820268552589437> ────────❥`
 )
-    .setColor("#FF1493")
-    .setThumbnail(serverIcon)
+    .setColor(Math.floor(Math.random() * 16777215))
+    .setThumbnail(user.displayAvatarURL({ dynamic: true }))
     .setImage(serverBannerURL)
     .addFields(
         { name: 'Username', value: username, inline: true },
         { name: 'Join Date', value: joinDate, inline: true },
         { name: 'Account Created', value: creationDate, inline: true }
     )
-    .setFooter({ text: "We're glad to have you here!", iconURL: serverIcon })
+.setFooter({
+  text: `👤 Thành viên thứ ${memberCount}`,
+  iconURL: serverIcon
+})
     .setTimestamp();
 
 await welcomeChannel.send({
