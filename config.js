@@ -6,7 +6,7 @@ module.exports = {
     rotateDefault: [
       { name: 'Netflix với Tnhi', type: ActivityType.Watching },
       { name: 'Bê đê', type: ActivityType.Playing },
-      { name: 'Restream hôm qua', type: ActivityType.Streaming, url: 'https://www.youtube.com/@MixiGaming3con' },
+      { name: 'Netflix', type: ActivityType.Streaming, url: 'https://www.youtube.com/@MixiGaming3con' },
       { name: 'Anh DmTriet chửi', type: ActivityType.Listening },
     ],
     songStatus: true
