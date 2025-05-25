@@ -52,7 +52,7 @@ const enLang = {
       serverCreatedOn: "Máy chủ được tạo vào"
   },
   serverInfoError: "Đã xảy ra lỗi khi lấy thông tin máy chủ.",
-  supportServerLink: "https://discord.gg/ssh2hgpadH",
+  supportServerLink: "https://discord.gg/em2xksJvZX",
 
   // For subcommands
   serverIconTitle: "Biểu tượng máy chủ",
@@ -61,7 +61,7 @@ const enLang = {
     // support.js
     supportDescription: "Máy chủ hỗ trợ của bot này",
     supportTitle: "Máy chủ hỗ trợ",
-    supportServerLink: "https://discord.gg/ssh2hgpadH",
+    supportServerLink: "https://discord.gg/em2xksJvZX",
     githubLink: "https://github.com/DmTriet31",
     replitLink: "https://replit.com/@DmTriet31",
     youtubeLink: "https://www.youtube.com/@DmTriet31",
