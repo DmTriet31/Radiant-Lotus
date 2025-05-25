@@ -29,7 +29,7 @@ module.exports = {
         const channelId = message.channel.id;
         const content = message.content.toLowerCase().trim(); 
 // === +1 legit handler ===
-const fixedChannelId = '1374508804812832849'; // Kênh dùng lệnh +1 legit
+const fixedChannelId = '1376265301225635974'; // Kênh dùng lệnh +1 legit
 if (channelId === fixedChannelId) {
     const legitRegex = /^\+1\s+legit\s+.+/i;
     if (legitRegex.test(message.content.trim())) {
@@ -44,7 +44,7 @@ if (channelId === fixedChannelId) {
     }
 }
 // === auto react Locket ảnh/video trong kênh media ===
-const mediaChannelId = '1367995671424270357'; // Kênh chứa ảnh/video chung
+const mediaChannelId = '1376211397310021762'; // Kênh chứa ảnh/video chung
 if (channelId === mediaChannelId) {
     const hasImage = message.attachments.some(att => att.contentType?.startsWith('image/'));
     const hasVideo = message.attachments.some(att => att.contentType?.startsWith('video/'));
@@ -61,7 +61,7 @@ if (channelId === mediaChannelId) {
     }
 }
 // === auto react kênh meme ===
-const memeChannelId = '1367120796891353129'; // Kênh chứa meme
+const memeChannelId = '1376211393858113547'; // Kênh chứa meme
 if (channelId === memeChannelId) {
     // Regex để kiểm tra có URL trong tin nhắn không
     const urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -81,7 +81,7 @@ if (channelId === memeChannelId) {
     }
 }
 // === auto react kênh selfie ===
-const selfieChannelId = '1367120801370996858'; // Kênh gửi ảnh selfie
+const selfieChannelId = '1376274067362942977'; // Kênh gửi ảnh selfie
 if (channelId === selfieChannelId) {
     const isSelfie = message.attachments.some(att => att.contentType?.startsWith('image/'));
 
