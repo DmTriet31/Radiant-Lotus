@@ -30,7 +30,7 @@ module.exports = (client) => {
     );
 
     await channel.send({
-      content: `🎉 Chào mừng <@${member.id}> đã đến với server, <@1376211238043783281> có member mới nè!`,
+      content: `🎉 Chào mừng <@${member.id}> đã đến với server, <@&1376211241915125813> có member mới nè!`,
       embeds: [embed],
       components: [row]
     });
