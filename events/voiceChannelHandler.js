@@ -327,7 +327,7 @@ const handleVoiceStateUpdate = async (client, oldState, newState) => {
         userId: member.user.id,
         createdAt: new Date(),
         isTemporary: true,
-        name: `ミ📻・${member.user.username}'s channel`,
+        name: `${member.user.username}'s channel`,
         description: ''
       });
 
