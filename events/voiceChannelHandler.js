@@ -302,7 +302,7 @@ const handleVoiceStateUpdate = async (client, oldState, newState) => {
     try {
       // Create new voice channel
       const newChannel = await newState.guild.channels.create({
-        name: `ミ📻・${member.user.username}'s channel`,
+        name: `ミ📻・${member.user.username}`,
         type: ChannelType.GuildVoice,
         parent: newState.channel.parentId,
         permissionOverwrites: [
@@ -327,7 +327,7 @@ const handleVoiceStateUpdate = async (client, oldState, newState) => {
         userId: member.user.id,
         createdAt: new Date(),
         isTemporary: true,
-        name: `ミ📻・${member.user.username}'s channel`,
+        name: `ミ📻・${member.user.username}`,
         description: ''
       });
 
