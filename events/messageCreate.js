@@ -33,7 +33,7 @@ const fixedChannelId = '1376265301225635974'; // Kênh dùng lệnh +1 legit
 if (channelId === fixedChannelId) {
     const legitRegex = /^\+1\s+legit\s+.+/i;
     if (legitRegex.test(message.content.trim())) {
-        const emojis = ['<a:RL_62802:1367510028613062656>', '<a:RL_purpleheart:1373139731138871376>', '<a:RL_verifyanimated:1371693855430283365>'];
+        const emojis = ['<a:RL_62802:1376215865036636182>', '<a:RL_purpleheart:1376260413959835649>', '<a:RL_verifyanimated:1376262189077237770>'];
         try {
             for (const emoji of emojis) {
                 await message.react(emoji);
@@ -50,7 +50,7 @@ if (channelId === mediaChannelId) {
     const hasVideo = message.attachments.some(att => att.contentType?.startsWith('video/'));
 
     if (hasImage || hasVideo) {
-        const mediaEmojis = ['<a:RL_62802:1367510028613062656>', '<a:RL_purpleheart:1373139731138871376>', '<a:RL_verifyanimated:1371693855430283365>'];
+        const emojis = ['<a:RL_62802:1376215865036636182>', '<a:RL_purpleheart:1376260413959835649>', '<a:RL_verifyanimated:1376262189077237770>'];
         try {
             for (const emoji of mediaEmojis) {
                 await message.react(emoji);
