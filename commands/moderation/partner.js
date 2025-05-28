@@ -25,8 +25,8 @@ module.exports = {
     const partnerRoleId = '1376211260403748987'; // ID role partner
     const outputChannelId = '1376211429719412767'; // ID kênh gửi thông báo
 
-    const messageContent = `>>> <a:RL_77:1367510222603554827> **Đại Diện:** <@${user.id}>
-<a:RL_muiten:1371959241430274101> ${link}`;
+    const messageContent = `>>> <a:RL_staff:1376216822197784587> **Đại Diện:** <@${user.id}>
+<a:RL_ten:1376247271909232721> ${link}`;
 
     try {
       const channel = guild.channels.cache.get(outputChannelId);
