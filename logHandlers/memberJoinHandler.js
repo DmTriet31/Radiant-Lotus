@@ -81,7 +81,7 @@ async function handleInviteTracking(client, member) {
                 }
                 
                 const inviter = inviterId ? `<@${inviterId}>` : "Unknown";
-                channel.send(`📩 **Invite Log:** ${member} joined using an invite from ${inviter}. (**Total Invites: ${totalInvites}**)`);
+                channel.send(`📩 **Nhật ký mời:** ${member} đã tham gia bằng lời mời từ ${inviter}. (**Tổng số lời mời: ${totalInvites}**)`);
             }
         }
         
@@ -161,7 +161,7 @@ const welcomeEmbed = new EmbedBuilder()
   `<a:RL_rainbowangie:1373277464188424260> [Tìm đồng đội](https://discord.com/channels/1367120428648108042/1367120810170515507)\n` +
   `> <a:RL_77:1367510222603554827> [Đọc qua luật](https://discord.com/channels/1367120428648108042/1367499798068072599) ・ ` +
   `<a:RL_77:1367510222603554827> [Tạo Voice Chat](https://discord.com/channels/1367120428648108042/1367120774300700763)\n` +
-  `╰─ ────── <a:RL_rainletter:1371820268552589437> ────────❥`
+  `╰─────── <a:RL_rainletter:1371820268552589437> ────────❥`
 )
     .setColor(Math.floor(Math.random() * 16777215))
     .setThumbnail(user.displayAvatarURL({ dynamic: true }))
