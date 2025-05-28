@@ -31,7 +31,7 @@ function setupIntervals(client) {
       const now = Date.now();
       const outdatedChannels = await TemporaryChannelModel.find({
         isTemporary: true,
-        createdAt: { $lt: new Date(now - 24 * 60 * 60 * 1000) }
+        createdAt: { $lt: new Date(now - 48 * 60 * 60 * 1000) }
       });
 
       for (const channel of outdatedChannels) {
