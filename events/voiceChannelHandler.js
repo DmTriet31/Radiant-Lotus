@@ -327,12 +327,12 @@ const handleVoiceStateUpdate = async (client, oldState, newState) => {
         userId: member.user.id,
         createdAt: new Date(),
         isTemporary: true,
-        name: `${member.user.username}'s channel`,
+        name: `ミ📻・${member.user.username}'s channel`,
         description: ''
       });
 
      
-      deleteChannelAfterTimeout(client, newChannel.id, 6 * 60 * 60 * 1000);
+      deleteChannelAfterTimeout(client, newChannel.id, 48 * 60 * 60 * 1000);
     } catch (error) {
       console.error('Error creating voice channel:', error);
     }
