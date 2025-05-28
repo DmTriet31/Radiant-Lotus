@@ -24,8 +24,8 @@ module.exports = {
 
     const outputChannelId = '1376211429719412767'; // Kênh thông báo
 
-    const updatedMessage = `>>> 🔁 **Cập nhật đối tác:** <@${user.id}>
-<a:RL_muiten:1371959241430274101> **Link mới:** ${newLink}`;
+    const updatedMessage = `>>> <a:RL_staff:1376216822197784587> **Cập nhật đối tác:** <@${user.id}>
+<a:RL_ten:1376247271909232721> **Link mới:** ${newLink}`;
 
     try {
       const channel = guild.channels.cache.get(outputChannelId);
