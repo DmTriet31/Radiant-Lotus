@@ -34,45 +34,5 @@ module.exports = (client) => {
       embeds: [embed],
       components: [row]
     });
-
-    const expireAt = Date.now() + 2 * 60 * 1000;
-
-    welcomeMessageMap.set(member.id, {
-      messageId: message.id,
-      channelId: channel.id,
-      expireAt,
-      guildId: member.guild.id // Lưu guild để fetch lại nếu cần
-    });
-
-    setTimeout(() => {
-      welcomeMessageMap.delete(member.id);
-    }, 2 * 60 * 1000);
-  });
-
-  // Khi có người rời server
-  client.on(Events.GuildMemberRemove, async member => {
-    const info = welcomeMessageMap.get(member.id);
-    if (!info) return;
-
-    // Chỉ xử lý nếu rời trong vòng 2 phút
-    if (Date.now() > info.expireAt) return;
-
-    const guild = client.guilds.cache.get(info.guildId);
-    if (!guild) return;
-
-    const channel = guild.channels.cache.get(info.channelId);
-    if (!channel) return;
-
-    try {
-      const msg = await channel.messages.fetch(info.messageId);
-      if (msg) await msg.delete();
-    } catch (err) {
-      console.error('Không thể xoá message chào mừng:', err);
-    }
-
-    // Gửi thông báo đã rời
-    await channel.send(`⚠️ <@${member.id}> vừa rời khỏi server ngay sau khi tham gia.`);
-
-    welcomeMessageMap.delete(member.id);
   });
 };
