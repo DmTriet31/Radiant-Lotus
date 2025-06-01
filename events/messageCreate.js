@@ -50,7 +50,7 @@ if (channelId === mediaChannelId) {
     const hasVideo = message.attachments.some(att => att.contentType?.startsWith('video/'));
 
     if (hasImage || hasVideo) {
-        const emojis = ['<a:RL_62802:1376215865036636182>', '<a:RL_purpleheart:1376260413959835649>', '<a:RL_verifyanimated:1376262189077237770>'];
+        const mediaEmojis = ['<:RL_pepeiosgrowingheart:1376248392665268245>', '<a:RL_pinkheart:1376249583847477372>', '<a:RL_purpleheart:1376260413959835649>'];
         try {
             for (const emoji of mediaEmojis) {
                 await message.react(emoji);
@@ -70,7 +70,7 @@ if (channelId === memeChannelId) {
     const hasVideo = message.attachments.some(att => att.contentType?.startsWith('video/'));
 
     if (hasLink || hasImage || hasVideo) {
-        const memeEmojis = ['🤣', '💀', '🔥'];
+        const memeEmojis = ['<a:RL_monkey:1376247148974440571>', '<a:RL_SieuCapChichDien:1376215206765658265>', '<a:RL_Tom:1376234763387535470>'];
         try {
             for (const emoji of memeEmojis) {
                 await message.react(emoji);
