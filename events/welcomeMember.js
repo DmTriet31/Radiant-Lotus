@@ -23,7 +23,7 @@ module.exports = (client) => {
 
     const row = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
-        .setLabel('.gg/em2xksJvZX')
+        .setLabel('.gg/radiantlotus')
         .setStyle(ButtonStyle.Link)
         .setURL('https://discord.com/channels/1369830175700942959/1376211346294833152') // Link mời của server
         .setEmoji('<a:RL_62802:1376215865036636182>'),
