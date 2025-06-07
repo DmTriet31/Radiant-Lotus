@@ -148,7 +148,7 @@ async function handleWelcomeChannel(member, welcomeSettings) {
         const cardBuffer = await welcomecard.build();
         const attachment = new AttachmentBuilder(cardBuffer, { name: 'welcome.png' });
 
-const serverBannerURL = "https://cdn.discordapp.com/attachments/1376211384626446411/1376226006485962772/3.gif?ex=68348dd8&is=68333c58&hm=c6b1afb146c9fb86da913c62c1f65a63de72649c0092b98dc10518263036164a&";
+const serverBannerURL = "https://cdn.discordapp.com/attachments/1376211384626446411/1380884482944667702/Radiant_Lotus_-_Animated_2.gif?ex=68458064&is=68442ee4&hm=ad6d83105a52fea3b215aa98db24c897c36be9dd380d2d9597f092406659b854&";
 
 const welcomeEmbed = new EmbedBuilder()
     .setTitle("୨ <:RL_Lounge_bow:1376217725994663957> ୧〃 ➜ *Thành viên mới*")
