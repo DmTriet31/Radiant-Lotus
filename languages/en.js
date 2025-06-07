@@ -21,7 +21,7 @@ const enLang = {
     //invite.js
     inviteTitle: "Liên kết mời",
     inviteDescription: "Click [vào đây]({inviteURL}) để mời bot vào máy chủ của bạn!",
-    inviteImageURL: "https://cdn.discordapp.com/attachments/1367522678420013146/1367522834787729548/standard.gif?ex=6814e463&is=681392e3&hm=851175dde7a8e999bfe5a37f0eda1ef9934b76b49e267264c1df6ce6b7d83be6&",
+    inviteImageURL: "https://cdn.discordapp.com/attachments/1376211384626446411/1380884482944667702/Radiant_Lotus_-_Animated_2.gif?ex=68458064&is=68442ee4&hm=ad6d83105a52fea3b215aa98db24c897c36be9dd380d2d9597f092406659b854&",
     //ping.js
     pingDescription: "Ping!",
     pingTitle: "Pong! 🏓",
@@ -52,7 +52,7 @@ const enLang = {
       serverCreatedOn: "Máy chủ được tạo vào"
   },
   serverInfoError: "Đã xảy ra lỗi khi lấy thông tin máy chủ.",
-  supportServerLink: "https://discord.gg/em2xksJvZX",
+  supportServerLink: "https://discord.gg/radiantlotus",
 
   // For subcommands
   serverIconTitle: "Biểu tượng máy chủ",
@@ -61,12 +61,12 @@ const enLang = {
     // support.js
     supportDescription: "Máy chủ hỗ trợ của bot này",
     supportTitle: "Máy chủ hỗ trợ",
-    supportServerLink: "https://discord.gg/em2xksJvZX",
+    supportServerLink: "https://discord.gg/radiantlotus",
     githubLink: "https://github.com/DmTriet31",
     replitLink: "https://replit.com/@DmTriet31",
     youtubeLink: "https://www.youtube.com/@DmTriet31",
     supportIconURL: 'https://cdn.discordapp.com/attachments/1367522678420013146/1367522900445495446/standard_1.gif?ex=6814e472&is=681392f2&hm=5e8a8d444f74a6fea7bdda586a483f2e2a2278e3f55ed4a1c30c92366b0a7570&',
-    supportImageURL: 'https://cdn.discordapp.com/attachments/1367522678420013146/1367522834787729548/standard.gif?ex=6814e463&is=681392e3&hm=851175dde7a8e999bfe5a37f0eda1ef9934b76b49e267264c1df6ce6b7d83be6&',
+    supportImageURL: 'https://cdn.discordapp.com/attachments/1376211384626446411/1380884482944667702/Radiant_Lotus_-_Animated_2.gif?ex=68458064&is=68442ee4&hm=ad6d83105a52fea3b215aa98db24c897c36be9dd380d2d9597f092406659b854&',
     supportDescriptionTitle: "Tham gia máy chủ Discord của chúng tôi để nhận hỗ trợ và cập nhật",
     followUsOn: "Theo dõi chúng tôi trên",
     discord: "Discord",
