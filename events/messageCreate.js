@@ -86,7 +86,7 @@ if (channelId === selfieChannelId) {
     const isSelfie = message.attachments.some(att => att.contentType?.startsWith('image/'));
 
     if (isSelfie) {
-        const selfieEmojis = ['<a:62802:1210522480901496863>', '<:RL_Ngai:1376217796148596798>', '<a:Yaemommy:1378721324876431361>'];
+        const selfieEmojis = ['<:RL_pepeiosgrowingheart:1376248392665268245>', '<a:RL_pinkheart:1376249583847477372>', '<a:RL_purpleheart:1376260413959835649>'];
         try {
             for (const emoji of selfieEmojis) {
                 await message.react(emoji);
