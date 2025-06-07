@@ -29,7 +29,7 @@ module.exports = {
         const channelId = message.channel.id;
         const content = message.content.toLowerCase().trim(); 
 // === +1 legit handler ===
-const fixedChannelId = '1376265301225635974'; // Kênh dùng lệnh +1 legit
+const fixedChannelId = '1380195260126199938'; // Kênh dùng lệnh +1 legit
 if (channelId === fixedChannelId) {
     const legitRegex = /^\+1\s+legit\s+.+/i;
     if (legitRegex.test(message.content.trim())) {
