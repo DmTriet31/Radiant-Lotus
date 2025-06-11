@@ -3,8 +3,8 @@ module.exports = {
     lavalink: {
         identifier: 'DmTriet',
         password: 'Radiant Lotus',
-        host: '78.46.65.243',
-        port: 4644,
+        host: '5.39.63.207',
+        port: 2191,
         secure: false
     }
 };
