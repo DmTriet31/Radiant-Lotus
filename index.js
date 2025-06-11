@@ -118,3 +118,29 @@ const loadEventHandlers = () => {
 };
 
 loadEventHandlers();
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('Bot is running!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Express server listening on port ${PORT}`);
+});
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+// Đăng nhập bot bằng token lấy từ biến môi trường (phải cấu hình trong Render)
+const token = process.env.TOKEN;
+if (!token) {
+  console.error('Error: Discord bot token (TOKEN) is not defined in environment variables!');
+  process.exit(1);
+}
+
+client.login(token).catch(err => {
+  console.error('Failed to login:', err);
+});
