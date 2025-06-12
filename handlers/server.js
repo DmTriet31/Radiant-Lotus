@@ -2,11 +2,11 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
-// Dùng port của Render hoặc fallback về 3000 khi chạy local
-const port = process.env.PORT || 3000;
+// Lấy port từ biến môi trường do Render cung cấp, nếu không có thì fallback về 3000 (local)
+const port = process.env.PORT || 1000;
 
 app.get('/', (req, res) => {
-  // Gửi file index.html (bạn nhớ để index.html cùng thư mục với server.js)
+  // Trả về file index.html nằm cùng thư mục với server.js
   const filePath = path.join(__dirname, 'index.html');
   res.sendFile(filePath);
 });
