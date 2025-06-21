@@ -173,7 +173,7 @@ const welcomeEmbed = new EmbedBuilder()
     )
 .setFooter({
   text: `👤 Thành viên thứ ${memberCount}`,
-  iconURL: serverIcon
+    iconURL: serverIcon || "https://cdn.discordapp.com/attachments/1376211384626446411/1376226059141517474/standard_1.gif?ex=68348de5&is=68333c65&hm=c286ee685a54a46be8e15a3be6913d128f34d9ef0eb3da9f3450b3ffab078ed0&"
 })
     .setTimestamp();
 
