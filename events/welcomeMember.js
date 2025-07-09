@@ -27,6 +27,11 @@ module.exports = (client) => {
         .setStyle(ButtonStyle.Link)
         .setURL('https://discord.com/channels/1369830175700942959/1376211346294833152') // Link mời của server
         .setEmoji('<a:RL_62802:1376215865036636182>'),
+    
+    new ButtonBuilder()
+        .setCustomId('greet_member')
+        .setLabel('👋 Chào member')
+        .setStyle(ButtonStyle.Primary)
     );
 
     await channel.send({
@@ -34,5 +39,27 @@ module.exports = (client) => {
       embeds: [embed],
       components: [row]
     });
+
+    const greetings = [
+      `Chào mừng <@${member.id}> đến với Radiant Lotus! 🌸`,
+      `Heyy <@${member.id}>! Mong bạn sẽ có khoảng thời gian tuyệt vời tại đây 💫`,
+      `<@${member.id}>, rất vui khi bạn tham gia với chúng tôi 😄`,
+      `Yay <@${member.id}> đã đến, cùng vui chơi nào! 🎉`,
+      `Xin chào <@${member.id}>, chúc bạn tìm được những người bạn mới tuyệt vời! 💖`
+    ];
+
+    const collector = sentMessage.createMessageComponentCollector({
+      componentType: ComponentType.Button,
+      time: 60 * 1000 // hoạt động trong 1 phút
+    });
+
+    collector.on('collect', async interaction => {
+      if (interaction.customId === 'greet_member') {
+        const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+        await interaction.reply({
+          content: `<@${interaction.user.id}> nói: ${randomGreeting}`,
+          ephemeral: false
+        });
+      }
+    });
   });
-};
