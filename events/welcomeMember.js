@@ -50,7 +50,7 @@ module.exports = (client) => {
 
     const collector = sentMessage.createMessageComponentCollector({
       componentType: ComponentType.Button,
-      time: 60 * 1000 // hoạt động trong 1 phút
+      time: 5 * 60 * 1000 // hoạt động trong 1 phút
     });
 
     collector.on('collect', async interaction => {
