@@ -72,4 +72,4 @@ module.exports = (client) => {
       await sentMessage.edit({ components: [disabledRow] });
     });
   });
-};;
+};
