@@ -62,5 +62,14 @@ module.exports = (client) => {
         });
       }
     });
+    // Khi collector kết thúc, disable hết nút trong message
+    collector.on('end', async () => {
+      const disabledRow = new ActionRowBuilder().addComponents(
+        row.components.map(button =>
+          ButtonBuilder.from(button).setDisabled(true)
+        )
+      );
+      await sentMessage.edit({ components: [disabledRow] });
+    });
   });
-  };
+};;
