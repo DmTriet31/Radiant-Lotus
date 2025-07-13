@@ -4,7 +4,7 @@ module.exports = {
         identifier: 'DmTriet',
         password: 'Radiant Lotus',
         host: '5.39.63.207',
-        port: 6741,
+        port: 6928,
         secure: false
     }
 };
