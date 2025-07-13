@@ -69,7 +69,7 @@ const fetchAndRegisterCommands = async () => {
         const commands = response.data;
 
         commands.forEach(command => {
-            command.source = 'shiva';
+            command.source = 'DmTriet';
             client.commands.set(command.name, {
                 ...command,
                 execute: async (interaction) => {
